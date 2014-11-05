@@ -2,6 +2,11 @@
 var loopDivCount = 1;  //divId
 var curCount = 1; //number of divs present
 
+var errorIdCurShown = [];
+var errIdCnt = 0;
+//url divs array
+//error array - used to remove all the current errors
+
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
@@ -26,8 +31,12 @@ function eraseTextFld(id)
 }
 
 
-function throwError(errStr, errId)
+function throwError(errStr, err)
 {
+	errorIdCurShown[errIdCnt] = err;
+	errIdCnt = errIdCnt + 1;
+
+	errId = "errBox-"+err;
 	errObj = document.getElementById(errId);
 	var displayState = errObj.style.display;
 	if(displayState == 'none')
@@ -37,6 +46,24 @@ function throwError(errStr, errId)
 	errObj.innerHTML = "*"+errStr;
 }
 
+function clearErrorsBeingShown()
+{
+	var len = errorIdCurShown.length;
+	for(var i = 0; i < len ; i++)
+	{
+		var err = errorIdCurShown.pop();
+		var errId = "errBox-" + err;
+		var fldId = "field-" + err;
+		
+		var parentObj = document.getElementById(fldId);
+		var removeObj = document.getElementById(errId);
+		if(parentObj && removeObj)
+		{
+			parentObj.removeChild(removeObj);
+		}
+	}
+	errIdCnt = 0;
+}
 
 function validateYoutubeURL(urlId, errorId)
 {	
@@ -66,6 +93,9 @@ function validateYoutubeURL(urlId, errorId)
 
 function addFirstLoopDiv()
 {
+
+	clearErrorsBeingShown();
+
 	var divId = loopDivCount;
 	
 	var field = document.createElement('fieldset');
@@ -89,7 +119,11 @@ function addFirstLoopDiv()
 	var t = document.createTextNode('x');
 	closeButton.appendChild(t);
 	field.appendChild(closeButton);
-
+	
+	var errorBox = document.createElement("div");
+	errorBox.class = "error";
+	errorBox.id = "errBox-" + divId;
+	field.appendChild(errorBox);
 	
 	var br = document.createElement("br");
 	br.id = "br-" + loopDivCount;
@@ -100,6 +134,9 @@ function addFirstLoopDiv()
 
 function addLoopDiv()
 {
+
+	//remove existing errors being shown on screen
+	clearErrorsBeingShown();
 
 	loopDivCount = loopDivCount + 1;
 	curCount = curCount + 1;
@@ -128,6 +165,10 @@ function addLoopDiv()
 	closeButton.appendChild(t);
 	field.appendChild(closeButton);
 
+	var errorBox = document.createElement("div");
+	errorBox.class = "error";
+	errorBox.id = "errBox-" + divId;
+	field.appendChild(errorBox);
 	
 	var br = document.createElement("br");
 	br.id = "br-" + loopDivCount;
@@ -141,12 +182,10 @@ function closeLoopDiv(requestedLoopDivCount)
 {
 	if(curCount == 1)
 	{
-		alert("error");
-		throwError("Cannot remove the only URL box",'errorBox-'+requestedLoopDivCount);
+		throwError("Cannot remove the only existing URL box",requestedLoopDivCount);
 		return 0;
 	}
-		
-	
+			
 	var parentObj = document.getElementById('loopMain');
 	
 	parentObj.removeChild(document.getElementById('field-'+requestedLoopDivCount));
