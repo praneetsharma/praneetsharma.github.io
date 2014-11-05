@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/subsup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/mystylesheet.css" media="screen">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Praneetsharma.github.io by praneetsharma</title>	
 
+	<script src="../Javascripts/myJSFunctions.js">	
+	
+	</script>
+	
+	
   </head>
   
   <body>
@@ -32,6 +38,20 @@
 			<li> Loop videos for the number of times you specify.
 			<li> Loop full video or a part of it.			
 		</ol>
+	  
+		<hr>
+		
+		<div>
+			<p> Enter valid youtube URL: <input type="text" id='videoUrl' size="50" value="">
+				<div style="display:none" class="error" name="toggleError" id="invalidURL" value=""></div>
+			</p>
+			
+			
+			
+			<button type="button" onclick="validateYoutubeURL('videoUrl','invalidURL')">LOOP</button>
+			
+			
+		</div>
 	  
 	  
 	  </div>
