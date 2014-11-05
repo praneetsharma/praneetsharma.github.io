@@ -15,7 +15,10 @@
     <title>Praneetsharma.github.io by praneetsharma</title>	
 
 	<script src="../javascripts/myJSFunctions.js">	
-	
+		document.addEventListener("DOMContentLoaded", function() {
+		  addFirstLoopDiv();
+		});
+		
 	</script>
 	
 	
@@ -42,14 +45,23 @@
 		<hr>
 		
 		<div>
-			<p> Enter valid youtube URL: <input type="text" id='videoUrl' size="50" value="">
-				<div style="display:none" class="error" name="toggleError" id="invalidURL" value=""></div>
-			</p>
+		
+			<button type="button" onclick="validateYoutubeURL('videoUrl-1','invalidURL-1')">LOOP</button>
+			<br /><br />
+			
+			<button type="button" onclick="addLoopDiv()">ADD another video?</button>
+			<br /><br />
 			
 			
+			<div id="loopMain">
+				
+				<script>addFirstLoopDiv()</script>
+				<!--Enter valid youtube URL: <input type="text" id='videoUrl-1' size="50" value=""> 
+				<button class="close" id="clsBt-1" onclick="closeLoopDiv()"><strong>&times;</strong></button><br />
+				<div style="display:none" class="error" name="toggleError" id="errorBox-1" value=""></div> -->
+				
 			
-			<button type="button" onclick="validateYoutubeURL('videoUrl','invalidURL')">LOOP</button>
-			
+			</div>						
 			
 		</div>
 	  
