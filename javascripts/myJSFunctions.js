@@ -56,10 +56,10 @@ function clearErrorsBeingShown()
 		var fldId = "field-" + err;
 		
 		var parentObj = document.getElementById(fldId);
-		var removeObj = document.getElementById(errId);
-		if(parentObj && removeObj)
+		var errObj = document.getElementById(errId);
+		if(parentObj && errObj)
 		{
-			parentObj.removeChild(removeObj);
+			errObj.innerHTML = "";
 		}
 	}
 	errIdCnt = 0;
@@ -107,11 +107,24 @@ function addFirstLoopDiv()
 	
 	var element = document.createElement("input");	
 	element.id = "videoUrl-" + loopDivCount;	
-	element.size = "50";
+	element.size = "35";
 	field.appendChild(element);
 		
 	field.appendChild(document.createTextNode(" ")); //adding little space
-		
+	
+	var txt2 = document.createTextNode(", Loop Count: ");
+	txt2.id = 'txt2-' + loopDivCount;
+	field.appendChild(txt2);
+	
+	
+	var loopCounter = document.createElement("input");
+	loopCounter.id = "cntr-" + loopDivCount;
+	loopCounter.type = "number";
+	loopCounter.size = "2";
+	loopCounter.min = "0";
+	loopCounter.max = "20";
+	loopCounter.value = "1";
+	field.appendChild(loopCounter);	
 	var closeButton = document.createElement("button");
 	closeButton.class = "close";
 	closeButton.id = "clsBt-"+loopDivCount;
@@ -119,6 +132,7 @@ function addFirstLoopDiv()
 	var t = document.createTextNode('x');
 	closeButton.appendChild(t);
 	field.appendChild(closeButton);
+
 	
 	var errorBox = document.createElement("div");
 	errorBox.class = "error";
@@ -152,11 +166,24 @@ function addLoopDiv()
 	
 	var element = document.createElement("input");	
 	element.id = "videoUrl-" + loopDivCount;	
-	element.size = "50";
+	element.size = "35";
 	field.appendChild(element);
 		
 	field.appendChild(document.createTextNode(" ")); //adding little space
-		
+	
+	var txt2 = document.createTextNode(", Loop Count: ");
+	txt2.id = 'txt2-' + loopDivCount;
+	field.appendChild(txt2);
+	
+	
+	var loopCounter = document.createElement("input");
+	loopCounter.id = "cntr-" + loopDivCount;
+	loopCounter.type = "number";
+	loopCounter.size = "2";
+	loopCounter.min = "0";
+	loopCounter.max = "20";
+	loopCounter.value = "1";
+	field.appendChild(loopCounter);	
 	var closeButton = document.createElement("button");
 	closeButton.class = "close";
 	closeButton.id = "clsBt-"+loopDivCount;
@@ -165,6 +192,7 @@ function addLoopDiv()
 	closeButton.appendChild(t);
 	field.appendChild(closeButton);
 
+	
 	var errorBox = document.createElement("div");
 	errorBox.class = "error";
 	errorBox.id = "errBox-" + divId;
