@@ -46,11 +46,17 @@
 		
 		<div>
 		
-			<button type="button" onclick="validateYoutubeURL('videoUrl-1','invalidURL-1')">LOOP</button>
+			<iframe id="videoBox" width="728" height="390" allowfullscreen="1"
+				src="http://www.youtube.com/embed/XGSy3_Czz8k">
+			</iframe>
+		
+			<!-- <button type="button" onclick="validateYoutubeURL('videoUrl-1','invalidURL-1')">LOOP</button> -->
+			<button type="button" onclick="playVideoOnBox()">LOOP</button>
 			<br /><br />
 			
 			<button type="button" onclick="addLoopDiv()">ADD another video?</button>
-			<br /><br />
+			<br /><br />	
+			
 			
 			
 			<div id="loopMain">

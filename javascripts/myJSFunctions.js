@@ -7,6 +7,8 @@ var errIdCnt = 0;
 //url divs array
 //error array - used to remove all the current errors
 
+divArr = [];
+
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
@@ -98,6 +100,8 @@ function addFirstLoopDiv()
 
 	var divId = loopDivCount;
 	
+	divArr.push(divId);
+	
 	var field = document.createElement('fieldset');
 	field.id = 'field-' + loopDivCount;
 	
@@ -157,6 +161,8 @@ function addLoopDiv()
 	
 	var divId = loopDivCount;
 	
+	divArr.push(divId);
+	
 	var field = document.createElement('fieldset');
 	field.id = 'field-' + loopDivCount;
 	
@@ -213,7 +219,13 @@ function closeLoopDiv(requestedLoopDivCount)
 		throwError("Cannot remove the only existing URL box",requestedLoopDivCount);
 		return 0;
 	}
-			
+		
+	var idx = divArr.indexOf(requestedLoopDivCount);
+	if(idx > -1)
+	{
+		divArr[idx] = 0;
+	}
+		
 	var parentObj = document.getElementById('loopMain');
 	
 	parentObj.removeChild(document.getElementById('field-'+requestedLoopDivCount));
@@ -221,4 +233,40 @@ function closeLoopDiv(requestedLoopDivCount)
 	curCount = curCount - 1;
 	
 }
+
+function runVideoLoopCountTimes(loopDivId)
+{
+	var loopCount = document.getElementById("cntr-"+loopDivId).value;
+	var url = document.getElementById("videoUrl-"+loopDivId).value;
+	var videoBoxObj = document.getElementById("videoBox");
+	var i;
+	var strsplit = url.split("=");
+	var newUrl = "http://www.youtube.com/embed/" + strsplit[1] + "?autoplay=true";
+	for(i=0;i<loopCount;i++)
+	{
+		videoBoxObj.src = newUrl;
+	}
+}
+
+function playVideoOnBox()
+{
+	var videoBoxObj = document.getElementById("videoBox");
+	
+	var len = divArr.length;
+	var i;
+	for(i=0;i<len;i++)
+	{
+		if(divArr[i]!=0)
+		{
+			runVideoLoopCountTimes(divArr[i]);
+		}
+	}
+	
+	//var url = document.getElementById("videoUrl-"+"1").value;
+	//var strsplit = url.split("=");
+	//var newUrl = "http://www.youtube.com/embed/" + strsplit[1] + "?autoplay=true";
+	//videoBoxObj.src = newUrl;
+	
+}
+
 
