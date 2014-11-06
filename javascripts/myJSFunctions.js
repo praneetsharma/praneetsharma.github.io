@@ -341,8 +341,27 @@ function youtubeSearch()
 	{
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
+			parseSearchResponse(searchResultsResponse);
 		});
 		
+	}
+}
+
+
+
+function parseSearchResponse(response)
+{
+	obj = JSON.parse(response);
+	var i;
+	
+	for(i=0;i<5;i++)
+	{
+		var title = obj.items[i].snippet.title;
+		var thumbnail = obj.items[i].snippet.thumbnails.medium;
+		var url = "https://www.youtube.com/watch?v=" + obj.times[i].id.videoId;
+		var videoDescr = obj.items[i].snippet.description;
+		var uploaderInfo = obj.items[i].snippet.channelTitle;
+		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr);
 	}
 }
 
