@@ -289,7 +289,6 @@ function youtubeSearch()
 	if(searchTxt)
 	{
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
-			alert("hello");
 			search(searchTxt);
 		});
 		
