@@ -358,6 +358,298 @@ function youtubeSearch()
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
 			searchResultsResponse = document.getElementById('response').innerHTML;
+			searchResultsResponse = "{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/-_SYwm_t0z7nE8oGXpwVJIEUVRc\"",
+  "nextPageToken": "CAUQAA",
+  "pageInfo": {
+    "totalResults": 811484,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/J8Jz-kD7Lar0XcVfTy-bujblq-o\"",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6KQPhoCICcs"
+      },
+      "snippet": {
+        "publishedAt": "2011-09-26T15:25:17.000Z",
+        "channelId": "UCVZ2J_VJlGHOvM9ie99QTPw",
+        "title": "asd movie",
+        "description": "ALL EPISODES.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6KQPhoCICcs/default.jpg"
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6KQPhoCICcs/mqdefault.jpg"
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6KQPhoCICcs/hqdefault.jpg"
+          }
+        },
+        "channelTitle": "chicken1761998",
+        "liveBroadcastContent": "none"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/_ssTcJJiWZbNMe1KCk-Xh0AjBw0\"",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zPryQqm7-CA"
+      },
+      "snippet": {
+        "publishedAt": "2009-12-06T19:29:39.000Z",
+        "channelId": "UCxW_N2764ykSszv_78ZHbag",
+        "title": "Afrob - ASD Comeback feat. Samy Deluxe",
+        "description": "Afrob - ASD Comeback feat. Samy Deluxe.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zPryQqm7-CA/default.jpg"
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zPryQqm7-CA/mqdefault.jpg"
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zPryQqm7-CA/hqdefault.jpg"
+          }
+        },
+        "channelTitle": "toonTwo",
+        "liveBroadcastContent": "none"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/HbuCs-po3BQAknwWodx2l3kZ0UY\"",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PbQhiv6OB0E"
+      },
+      "snippet": {
+        "publishedAt": "2009-09-03T11:09:09.000Z",
+        "channelId": "UCvoIc2xEKDxazN4n_fvO59A",
+        "title": "Secundum ASD Atrial Septal Defect Repair",
+        "description": "Redmond Burke MD, Chief of Pediatric Cardiovascular Surgery at Miami Children's Hospital demonstrates an operative technique for atrial septal defect or ASD.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/default.jpg"
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/mqdefault.jpg"
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/hqdefault.jpg"
+          }
+        },
+        "channelTitle": "Redmond111",
+        "liveBroadcastContent": "none"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/zr7kERK-G3QA9KoYjCSc6XAGGuQ\"",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_G2sO1ikcKY"
+      },
+      "snippet": {
+        "publishedAt": "2012-12-22T16:03:33.000Z",
+        "channelId": "UCDUy9ybZtu_7FIHDwygCMbw",
+        "title": "ASD - Ich und Er",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/default.jpg"
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/mqdefault.jpg"
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/hqdefault.jpg"
+          }
+        },
+        "channelTitle": "freeza1606",
+        "liveBroadcastContent": "none"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/IO-BTiLAgHhL4esdv4_YjQOvKpM\"",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "SU-7946HlMw"
+      },
+      "snippet": {
+        "publishedAt": "2011-08-21T14:53:58.000Z",
+        "channelId": "UCbqNXYABz1Wl8GYmhZmaUkQ",
+        "title": "Explaining Autism to Children:  ASD and Me",
+        "description": "http://www.facebook.com/ASDandMe My daughter, Anna (age 4), and my son, Donnie (age 7), narrated this video. They did such a great job and I am so proud ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SU-7946HlMw/default.jpg"
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SU-7946HlMw/mqdefault.jpg"
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SU-7946HlMw/hqdefault.jpg"
+          }
+        },
+        "channelTitle": "ASDandMe",
+        "liveBroadcastContent": "none"
+      }
+    }
+  ],
+  "result": {
+    "kind": "youtube#searchListResponse",
+    "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/-_SYwm_t0z7nE8oGXpwVJIEUVRc\"",
+    "nextPageToken": "CAUQAA",
+    "pageInfo": {
+      "totalResults": 811484,
+      "resultsPerPage": 5
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/J8Jz-kD7Lar0XcVfTy-bujblq-o\"",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "6KQPhoCICcs"
+        },
+        "snippet": {
+          "publishedAt": "2011-09-26T15:25:17.000Z",
+          "channelId": "UCVZ2J_VJlGHOvM9ie99QTPw",
+          "title": "asd movie",
+          "description": "ALL EPISODES.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/6KQPhoCICcs/default.jpg"
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/6KQPhoCICcs/mqdefault.jpg"
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/6KQPhoCICcs/hqdefault.jpg"
+            }
+          },
+          "channelTitle": "chicken1761998",
+          "liveBroadcastContent": "none"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/_ssTcJJiWZbNMe1KCk-Xh0AjBw0\"",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "zPryQqm7-CA"
+        },
+        "snippet": {
+          "publishedAt": "2009-12-06T19:29:39.000Z",
+          "channelId": "UCxW_N2764ykSszv_78ZHbag",
+          "title": "Afrob - ASD Comeback feat. Samy Deluxe",
+          "description": "Afrob - ASD Comeback feat. Samy Deluxe.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/zPryQqm7-CA/default.jpg"
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/zPryQqm7-CA/mqdefault.jpg"
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/zPryQqm7-CA/hqdefault.jpg"
+            }
+          },
+          "channelTitle": "toonTwo",
+          "liveBroadcastContent": "none"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/HbuCs-po3BQAknwWodx2l3kZ0UY\"",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "PbQhiv6OB0E"
+        },
+        "snippet": {
+          "publishedAt": "2009-09-03T11:09:09.000Z",
+          "channelId": "UCvoIc2xEKDxazN4n_fvO59A",
+          "title": "Secundum ASD Atrial Septal Defect Repair",
+          "description": "Redmond Burke MD, Chief of Pediatric Cardiovascular Surgery at Miami Children's Hospital demonstrates an operative technique for atrial septal defect or ASD.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/default.jpg"
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/mqdefault.jpg"
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/PbQhiv6OB0E/hqdefault.jpg"
+            }
+          },
+          "channelTitle": "Redmond111",
+          "liveBroadcastContent": "none"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/zr7kERK-G3QA9KoYjCSc6XAGGuQ\"",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "_G2sO1ikcKY"
+        },
+        "snippet": {
+          "publishedAt": "2012-12-22T16:03:33.000Z",
+          "channelId": "UCDUy9ybZtu_7FIHDwygCMbw",
+          "title": "ASD - Ich und Er",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/default.jpg"
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/mqdefault.jpg"
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/_G2sO1ikcKY/hqdefault.jpg"
+            }
+          },
+          "channelTitle": "freeza1606",
+          "liveBroadcastContent": "none"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/IO-BTiLAgHhL4esdv4_YjQOvKpM\"",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "SU-7946HlMw"
+        },
+        "snippet": {
+          "publishedAt": "2011-08-21T14:53:58.000Z",
+          "channelId": "UCbqNXYABz1Wl8GYmhZmaUkQ",
+          "title": "Explaining Autism to Children:  ASD and Me",
+          "description": "http://www.facebook.com/ASDandMe My daughter, Anna (age 4), and my son, Donnie (age 7), narrated this video. They did such a great job and I am so proud ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/SU-7946HlMw/default.jpg"
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/SU-7946HlMw/mqdefault.jpg"
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/SU-7946HlMw/hqdefault.jpg"
+            }
+          },
+          "channelTitle": "ASDandMe",
+          "liveBroadcastContent": "none"
+        }
+      }
+    ]
+  }
+}";
 			parseSearchResponse(searchResultsResponse);
 		});
 		
