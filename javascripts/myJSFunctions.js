@@ -288,7 +288,7 @@ function youtubeSearch()
 	var searchTxt = sbInpObj.value;
 	if(searchTxt)
 	{
-		$.getScript("youtubeApi.js", function(){
+		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			alert("hello");
 			search(searchTxt);
 		});
