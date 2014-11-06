@@ -22,7 +22,7 @@ function onYouTubeApiLoad() {
     // See http://goo.gl/PdPA1 to get a key for your own applications.
     gapi.client.setApiKey('AIzaSyBGyrLRM1SQEyCvPOsYAosM0xO4zGWLkX0');
 
-    search("praneet");
+    //search("praneet");
 }
 
 // After the API loads, call a function to enable the search box.
