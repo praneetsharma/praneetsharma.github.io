@@ -358,7 +358,8 @@ function youtubeSearch()
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
 			searchResultsResponse = "asd";
-			searchResultsResponse = document.getElementById('response').innerHTML;			
+			searchResultsResponse = document.getElementById('response').innerHTML;		
+			searchResultsResponse = youtubeResponse			
 			parseSearchResponse(searchResultsResponse);
 		});
 		
