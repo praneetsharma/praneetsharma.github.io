@@ -18,7 +18,7 @@ function onYouTubeApiLoad() {
     // See http://goo.gl/PdPA1 to get a key for your own applications.
     gapi.client.setApiKey('AIzaSyBGyrLRM1SQEyCvPOsYAosM0xO4zGWLkX0');
 
-    search();
+    //search();
 }
 
 // After the API loads, call a function to enable the search box.
