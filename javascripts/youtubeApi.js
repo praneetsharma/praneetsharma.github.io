@@ -5,8 +5,8 @@
 var youtubeResponse = "";
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
-	youtubeResponse = responseString;
-    //document.getElementById('response').innerHTML += responseString;
+	//youtubeResponse = responseString;
+    document.getElementById('response').innerHTML += responseString;
 }
 
 function returnResponse(response) {
