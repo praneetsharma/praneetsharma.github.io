@@ -358,7 +358,7 @@ function youtubeSearch()
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
 			searchResultsResponse = document.getElementById('response').innerHTML;
-			searchResultsResponse = "{
+			searchResultsResponse = '{
   "kind": "youtube#searchListResponse",
   "etag": "\"PSjn-HSKiX6orvNhGZvglLI2lvk/-_SYwm_t0z7nE8oGXpwVJIEUVRc\"",
   "nextPageToken": "CAUQAA",
@@ -649,7 +649,7 @@ function youtubeSearch()
       }
     ]
   }
-}";
+}';
 			parseSearchResponse(searchResultsResponse);
 		});
 		
