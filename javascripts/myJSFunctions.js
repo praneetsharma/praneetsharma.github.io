@@ -102,7 +102,12 @@ function scrollToParticularDiv(divId)
 	document.getElementById(divId).scrollIntoView();
 }
 
-
+function highlightDiv(divId)
+{
+	var divIdXtra = '#'+divId;
+	$(divIdXtra)
+       .effect('highlight',{},500); 
+}
 
 function addFirstLoopDiv()
 {
@@ -140,6 +145,16 @@ function addFirstLoopDiv()
 	loopCounter.max = "20";
 	loopCounter.value = "1";
 	field.appendChild(loopCounter);	
+	
+	field.appendChild(document.createTextNode(", skip this: "));
+	
+	var uncheckVideo = document.createElement("input");
+	uncheckVideo.type="checkbox";
+	uncheckVideo.value="skip Video";	
+	field.appendChild(uncheckVideo);
+	
+	field.appendChild(document.createTextNode("          "));
+	
 	var closeButton = document.createElement("button");
 	closeButton.class = "close";
 	closeButton.id = "clsBt-"+loopDivCount;
@@ -154,11 +169,14 @@ function addFirstLoopDiv()
 	errorBox.id = "errBox-" + divId;
 	field.appendChild(errorBox);
 	
+	
 	var br = document.createElement("br");
 	br.id = "br-" + loopDivCount;
 	field.appendChild(br);
 	
 	document.getElementById("loopMain").appendChild(field);
+	
+	
 }
 
 function addLoopDiv()
@@ -173,6 +191,9 @@ function addLoopDiv()
 	var divId = loopDivCount;
 	
 	divArr.push(divId);
+	
+	var superLocalDiv = document.createElement('div');
+	superLocalDiv.id = 'localLoopDiv-' + loopDivCount;
 	
 	var field = document.createElement('fieldset');
 	field.id = 'field-' + loopDivCount;
@@ -201,6 +222,16 @@ function addLoopDiv()
 	loopCounter.max = "20";
 	loopCounter.value = "1";
 	field.appendChild(loopCounter);	
+	
+	field.appendChild(document.createTextNode(", skip this: "));
+	
+	var uncheckVideo = document.createElement("input");
+	uncheckVideo.type="checkbox";
+	uncheckVideo.value="skip Video";	
+	field.appendChild(uncheckVideo);
+	
+	field.appendChild(document.createTextNode("          "));
+	
 	var closeButton = document.createElement("button");
 	closeButton.class = "close";
 	closeButton.id = "clsBt-"+loopDivCount;
@@ -215,11 +246,19 @@ function addLoopDiv()
 	errorBox.id = "errBox-" + divId;
 	field.appendChild(errorBox);
 	
+	
 	var br = document.createElement("br");
 	br.id = "br-" + loopDivCount;
 	field.appendChild(br);
 	
-	document.getElementById("loopMain").appendChild(field);
+	superLocalDiv.appendChild(field);
+	
+	document.getElementById("loopMain").appendChild(superLocalDiv);
+	
+	scrollToParticularDiv('field-'+divId);
+	
+	highlightDiv('localLoopDiv-'+divId);
+	
 }
 
 
@@ -300,7 +339,48 @@ function youtubeSearch()
 }
 
 
-
+function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
+{
+	var parentObj = document.getElementById('singleSearchResult');
+	
+	var field = document.createElement('fieldset');
+	
+	//adding thumbnail
+	var thumbnailDiv = document.createElement('div');
+	thumbnailDiv.class="thumbnail";
+	var e1 = document.createElement('a');
+	e1.href = "javascript:addLoopDiv()";
+	var img = document.createElement("img");
+	img.src = imgSrc;
+	img.width = '185';
+	img.height = '104';
+	e1.appendChild(img);
+	thumbnailDiv.appendChild(e1);
+	field.appendChild(thumbnailDiv);
+	
+	//adding title, uploaderInfo, and videoDescr
+	var videoInfoDiv = document.createElement('div');
+	var h3 = document.createElement('h3');
+	h3.class = 'videoTitle';
+	var e2 = document.createElement('a');
+	e2.href = "javascript:addLoopDiv()";
+	e2.innerHTML = title;
+	h3.appendChild(e2);
+	field.appendChild(h3);
+	var metaDiv = document.createElement('div');
+	metaDiv.class = 'uploaderMeta';
+	metaDiv.innerHTML = uploaderInfo;
+	field.appendChild(metaDiv);
+	var descrDiv = document.createElement('div');
+	descrDiv.class = 'videoDescr';
+	descrDiv.innerHTML = videoDescr;
+	field.appendChild(descrDiv);
+	
+	
+	
+	
+	parentObj.appendChild(field);
+}
 
 function populateSearchResultsList()
 {
