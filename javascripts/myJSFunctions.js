@@ -279,7 +279,12 @@ function youtubeSearch()
 	
 	if(searchTxt)
 	{
-		search(searchTxt);
+		$.getScript("youtubeApi.js", function(){
+			search(searchTxt);
+		   //alert("Script loaded and executed.");
+		   // Here you can use anything you defined in the loaded script
+		});
+		
 	}
 }
 

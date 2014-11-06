@@ -21,11 +21,16 @@ function onYouTubeApiLoad() {
     search();
 }
 
-function search(query) {
+// After the API loads, call a function to enable the search box.
+function handleAPILoaded() {
+  $('#search-button').attr('disabled', false);
+}
+
+function search(queryTxt) {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
-        part: 'id'
-		q: query
+        part: 'id',
+		q: queryTxt
     });
     
     // Send the request to the API server,
