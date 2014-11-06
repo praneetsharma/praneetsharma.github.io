@@ -277,7 +277,7 @@ function closeLoopDiv(requestedLoopDivCount)
 		
 	var parentObj = document.getElementById('loopMain');
 	
-	parentObj.removeChild(document.getElementById('field-'+requestedLoopDivCount));
+	parentObj.removeChild(document.getElementById('localLoopDiv-'+requestedLoopDivCount));
 	
 	curCount = curCount - 1;
 	
