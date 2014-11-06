@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">  
     <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/subsup.css" media="screen">
@@ -23,7 +23,30 @@
 	</script>
 	<script src="../javascripts/youtubeApi.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+	<script src="../javascripts/jquery-scrolltofixed-min.js" type="text/javascript"></script>
 	
+	<script>
+		$(document).ready(function() {  
+		var stickyNavTop = $('.nav').offset().top;  
+		  
+		var stickyNav = function(){  
+		var scrollTop = $(window).scrollTop();  
+			   
+		if (scrollTop > stickyNavTop) {   
+			$('.nav').addClass('sticky');  
+		} else {  
+			$('.nav').removeClass('sticky');   
+		}  
+		};  
+		  
+		stickyNav();  
+		  
+		$(window).scroll(function() {  
+			stickyNav();  
+		});  
+		}); 
+	</script>
 	
   </head>
   
@@ -31,17 +54,22 @@
 	<div id="container">
       <div class="inner">
 	  
+			  
 		<header>
           <h1>Youtube Looper <sup>&beta;</sup></h1>
-          <h2>TAGLINE</h2>
-		  
-		  
-		  <div class="light">
-			<form>
-				<span><input type="text" class="search square" placeholder="Search youtube videos and add to loop"></span>
-				<span><input type="button" value="Search"></span>
-			</form>
+          <h2>TAGLINE</h2>	  
+		</header>
 	  
+		<hr>
+		
+		<div class="nav" style="background-color:#A52A2A">  
+			<div class="navTab">
+				Youtube Looper	
+				<input type="search" name="filter.q" results="5" value="" />
+				<input type="submit" value="Search" />	
+			</div>
+		</div>
+		
 		<hr>
 		
 		<h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features of YOUTUBE LOOPER</h3>
