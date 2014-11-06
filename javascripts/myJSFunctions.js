@@ -117,6 +117,9 @@ function addFirstLoopDiv()
 	
 	divArr.push(divId);
 	
+	var superLocalDiv = document.createElement('div');
+	superLocalDiv.id = 'localLoopDiv-' + loopDivCount;
+	
 	var field = document.createElement('fieldset');
 	field.id = 'field-' + loopDivCount;
 	
@@ -173,7 +176,13 @@ function addFirstLoopDiv()
 	br.id = "br-" + loopDivCount;
 	field.appendChild(br);
 	
-	document.getElementById("loopMain").appendChild(field);
+	superLocalDiv.appendChild(field);
+	
+	document.getElementById("loopMain").appendChild(superLocalDiv);
+	
+	scrollToParticularDiv('field-'+divId);
+	
+	highlightDiv('localLoopDiv-'+divId);
 	
 	
 }
