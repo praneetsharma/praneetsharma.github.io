@@ -335,7 +335,7 @@ function youtubeSearch()
 {
 	var sbInpObj = document.getElementById('searchBoxInp');
 	var searchTxt = sbInpObj.value;
-	search(searchTxt);
+	search();
 	if(searchTxt)
 	{
 		$.getScript("youtubeApi.js", function(){
