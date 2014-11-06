@@ -7,6 +7,10 @@ function showResponse(response) {
     document.getElementById('response').innerHTML += responseString;
 }
 
+function returnResponse(response) {
+	return response;
+}
+
 // Called automatically when JavaScript client library is loaded.
 function onClientLoad() {
     gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
@@ -29,7 +33,7 @@ function handleAPILoaded() {
 function search(queryTxt) {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
-        part: 'id',
+        part: 'snippet',
 		q: queryTxt
     });
     
@@ -41,4 +45,5 @@ function search(queryTxt) {
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     showResponse(response);
+	//returnResponse(response);
 }

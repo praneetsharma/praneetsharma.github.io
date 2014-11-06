@@ -9,6 +9,10 @@ var errIdCnt = 0;
 
 divArr = [];
 
+
+var searchResultsResponse = "";
+
+
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
@@ -289,11 +293,18 @@ function youtubeSearch()
 	if(searchTxt)
 	{
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
-			search(searchTxt);
+			searchResultsResponse = search(searchTxt);
 		});
 		
 	}
 }
 
+
+
+
+function populateSearchResultsList()
+{
+	
+}
 
 
