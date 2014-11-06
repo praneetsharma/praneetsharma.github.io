@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/subsup.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/mystylesheet.css" media="screen">
+	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -20,6 +21,8 @@
 		});
 		
 	</script>
+	<script src="../javascripts/youtubeApi.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
 	
 	
   </head>
@@ -47,7 +50,7 @@
 		<div>
 		
 			<iframe id="videoBox" width="728" height="390" allowfullscreen="1"
-				src="http://www.youtube.com/embed/XGSy3_Czz8k">
+				src="">
 			</iframe>
 		
 			<!-- <button type="button" onclick="validateYoutubeURL('videoUrl-1','invalidURL-1')">LOOP</button> -->
@@ -67,7 +70,13 @@
 				<div style="display:none" class="error" name="toggleError" id="errorBox-1" value=""></div> -->
 				
 			
-			</div>						
+			</div>		
+
+
+			<pre id="response"></pre>
+
+
+			
 			
 		</div>
 	  
