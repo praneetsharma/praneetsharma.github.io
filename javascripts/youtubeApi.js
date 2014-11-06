@@ -8,7 +8,7 @@ function showResponse(response) {
 }
 
 function returnResponse(response) {
-	return response;
+	return JSON.stringify(response, '', 2);
 }
 
 // Called automatically when JavaScript client library is loaded.
