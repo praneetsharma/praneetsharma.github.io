@@ -40,10 +40,11 @@ function search(queryTxt) {
     // Send the request to the API server,
     // and invoke onSearchRepsonse() with the response.
     request.execute(onSearchResponse);
+	
 }
 
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
-    //showResponse(response);
-	returnResponse(response);
+    showResponse(response);
+	//returnResponse(response);
 }
