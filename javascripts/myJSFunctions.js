@@ -105,8 +105,7 @@ function scrollToParticularDiv(divId)
 function highlightDiv(divId)
 {
 	var divIdXtra = '#'+divId;
-	$(divIdXtra)
-       .effect('highlight',{},500); 
+	$(divIdXtra).effect('highlight',{},1000); 
 }
 
 function addFirstLoopDiv()
