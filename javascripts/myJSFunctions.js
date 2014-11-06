@@ -270,3 +270,18 @@ function playVideoOnBox()
 }
 
 
+
+
+function youtubeSearch()
+{
+	var sbInpObj = document.getElementById('searchBoxInp');
+	var searchTxt = sbInpObj.value;
+	
+	if(searchTxt)
+	{
+		search(searchTxt);
+	}
+}
+
+
+

@@ -21,10 +21,11 @@ function onYouTubeApiLoad() {
     search();
 }
 
-function search() {
+function search(query) {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'id'
+		q: query
     });
     
     // Send the request to the API server,

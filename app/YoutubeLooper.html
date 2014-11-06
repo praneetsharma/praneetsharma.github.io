@@ -18,33 +18,34 @@
 	<script src="../javascripts/myJSFunctions.js">	
 		document.addEventListener("DOMContentLoaded", function() {
 		  addFirstLoopDiv();
-		});
-		
+		});		
 	</script>
+	
 	<script src="../javascripts/youtubeApi.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 	<script src="../javascripts/jquery-scrolltofixed-min.js" type="text/javascript"></script>
 	
 	<script>
 		$(document).ready(function() {  
-		var stickyNavTop = $('.nav').offset().top;  
-		  
-		var stickyNav = function(){  
-		var scrollTop = $(window).scrollTop();  
-			   
-		if (scrollTop > stickyNavTop) {   
-			$('.nav').addClass('sticky');  
-		} else {  
-			$('.nav').removeClass('sticky');   
-		}  
-		};  
-		  
-		stickyNav();  
-		  
-		$(window).scroll(function() {  
+			var stickyNavTop = $('.nav').offset().top;  
+			  
+			var stickyNav = function(){  
+			var scrollTop = $(window).scrollTop();  
+				   
+			if (scrollTop > stickyNavTop) {   
+				$('.nav').addClass('sticky');  
+			} else {  
+				$('.nav').removeClass('sticky');   
+			}  
+			};  
+			  
 			stickyNav();  
-		});  
+			  
+			$(window).scroll(function() {  
+				stickyNav();  
+			});  
 		}); 
 	</script>
 	
@@ -76,8 +77,8 @@
 		<div class="nav" style="background-color:#A52A2A">  
 			<div class="navTab">
 				Youtube Looper
-				<input type="search" name="filter.q" results="5" value="" />
-				<input type="submit" value="Search" />	
+				<input type="search" id="searchBoxInp" name="filter.q" results="5" value="" placeholder="search for youtube videos" size="40" />
+				<input type="submit" id="searchBoxBtn" value="Search" onclick="youtubeSearch()" />	
 			</div>
 		</div>
 		
