@@ -357,7 +357,7 @@ function youtubeSearch()
 	{
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
-			alert(youtubeResponse);
+			alert(youtubeResponse+".");
 			parseSearchResponse(youtubeResponse);
 		});
 		
