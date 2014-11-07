@@ -329,22 +329,6 @@ function playVideoOnBox()
 
 
 
-function parseSearchResponse(response)
-{
-	obj = JSON.parse(response);
-	var i;
-	
-	for(i=0;i<5;i++)
-	{
-		var title = obj.items[i].snippet.title;
-		var thumbnail = obj.items[i].snippet.thumbnails.medium;
-		var url = "https://www.youtube.com/watch?v=" + obj.times[i].id.videoId;
-		var videoDescr = obj.items[i].snippet.description;
-		var uploaderInfo = obj.items[i].snippet.channelTitle;
-		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr);
-	}
-}
-
 
 function youtubeSearch()
 {
@@ -367,49 +351,6 @@ function youtubeSearch()
 }
 
 
-
-function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
-{
-	var parentObj = document.getElementById('singleSearchResult');
-	
-	var field = document.createElement('fieldset');
-	
-	//adding thumbnail
-	var thumbnailDiv = document.createElement('div');
-	thumbnailDiv.class="thumbnail";
-	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDiv()";
-	var img = document.createElement("img");
-	img.src = imgSrc;
-	img.width = '185';
-	img.height = '104';
-	e1.appendChild(img);
-	thumbnailDiv.appendChild(e1);
-	field.appendChild(thumbnailDiv);
-	
-	//adding title, uploaderInfo, and videoDescr
-	var videoInfoDiv = document.createElement('div');
-	var h3 = document.createElement('h3');
-	h3.class = 'videoTitle';
-	var e2 = document.createElement('a');
-	e2.href = "javascript:addLoopDiv()";
-	e2.innerHTML = title;
-	h3.appendChild(e2);
-	field.appendChild(h3);
-	var metaDiv = document.createElement('div');
-	metaDiv.class = 'uploaderMeta';
-	metaDiv.innerHTML = uploaderInfo;
-	field.appendChild(metaDiv);
-	var descrDiv = document.createElement('div');
-	descrDiv.class = 'videoDescr';
-	descrDiv.innerHTML = videoDescr;
-	field.appendChild(descrDiv);
-	
-	
-	
-	
-	parentObj.appendChild(field);
-}
 
 function populateSearchResultsList()
 {
