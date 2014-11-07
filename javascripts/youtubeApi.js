@@ -4,6 +4,7 @@
 // Helper function to display JavaScript value on HTML page.
 var youtubeResponse = "";
 
+var searchId = 0;
 
 function clearSearchBox()
 {
@@ -30,7 +31,8 @@ function parseSearchResponse(response)
 		var url = "https://www.youtube.com/watch?v=" + obj.items[i].id.videoId;
 		var videoDescr = obj.items[i].snippet.description;
 		var uploaderInfo = obj.items[i].snippet.channelTitle;
-		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr, i);
+		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr, searchId);
+		searchId++;
 	}
 }
 
