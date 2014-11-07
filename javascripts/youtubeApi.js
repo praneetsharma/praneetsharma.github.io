@@ -18,6 +18,8 @@ function clearSearchBox()
 
 function parseSearchResponse(response)
 {
+	clearSearchBox();
+	
 	obj = JSON.parse(response);
 	var i;
 	
@@ -37,9 +39,6 @@ function parseSearchResponse(response)
 
 function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
-
-	clearSearchBox();
-	
 	var localUrl = url;
 	
 	$.getScript("http://praneetsharma.github.io/javascripts/myJSFunctions.js", function(){
