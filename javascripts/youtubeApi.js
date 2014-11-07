@@ -16,7 +16,6 @@ function parseSearchResponse(response)
 		var title = obj.items[i].snippet.title;
 		var thumbnail = obj.items[i].snippet.thumbnails.medium.url;
 		var url = "https://www.youtube.com/watch?v=" + obj.items[i].id.videoId;
-		alert(url);
 		var videoDescr = obj.items[i].snippet.description;
 		var uploaderInfo = obj.items[i].snippet.channelTitle;
 		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr);
@@ -28,6 +27,8 @@ function parseSearchResponse(response)
 
 function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 {
+	var localUrl = url;
+
 	var parentObj = document.getElementById('singleSearchResult');
 	
 	var field = document.createElement('fieldset');
@@ -36,7 +37,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
 	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDivSpcl(url)";
+	e1.href = "javascript:addLoopDivSpcl(localUrl)";
 	var img = document.createElement("img");
 	img.src = imgSrc;
 	img.width = '185';
@@ -50,7 +51,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-	e2.href = "javascript:addLoopDivSpcl(url)";
+	e2.href = "javascript:addLoopDivSpcl(localUrl)";
 	e2.innerHTML = title;
 	h3.appendChild(e2);
 	field.appendChild(h3);
