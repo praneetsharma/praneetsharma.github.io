@@ -128,7 +128,7 @@ function addFirstLoopDiv()
 	
 	var txt = document.createTextNode("Enter valid youtube URL: ");
 	txt.id = 'txt-' + loopDivCount;
-	field.appendChild(txt);
+	//field.appendChild(txt);
 	
 	var element = document.createElement("input");	
 	element.id = "videoUrl-" + loopDivCount;	
@@ -211,7 +211,7 @@ function addLoopDiv()
 	
 	var txt = document.createTextNode("Enter valid youtube URL: ");
 	txt.id = 'txt-' + loopDivCount;
-	field.appendChild(txt);
+	//field.appendChild(txt);
 	
 	var element = document.createElement("input");	
 	element.id = "videoUrl-" + loopDivCount;	
@@ -294,7 +294,7 @@ function addLoopDivSpcl(url)
 	
 	var txt = document.createTextNode("Enter valid youtube URL: ");
 	txt.id = 'txt-' + loopDivCount;
-	field.appendChild(txt);
+	//field.appendChild(txt);
 	
 	var element = document.createElement("input");	
 	element.id = "videoUrl-" + loopDivCount;	
@@ -418,11 +418,6 @@ function playVideoOnBox()
 		}
 	}
 	
-	//var url = document.getElementById("videoUrl-"+"1").value;
-	//var strsplit = url.split("=");
-	//var newUrl = "http://www.youtube.com/embed/" + strsplit[1] + "?autoplay=true";
-	//videoBoxObj.src = newUrl;
-	
 }
 
 
@@ -439,10 +434,6 @@ function youtubeSearch()
 	{
 		$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			searchResultsResponse = search(searchTxt);
-			searchResultsResponse = "asd";
-			searchResultsResponse = document.getElementById('response').innerHTML;		
-			searchResultsResponse = youtubeResponse			
-			//parseSearchResponse(searchResultsResponse);
 		});
 		
 	}
