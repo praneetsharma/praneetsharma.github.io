@@ -36,7 +36,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
 	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDiv(url)";
+	e1.href = "javascript:addLoopDivSpcl(url)";
 	var img = document.createElement("img");
 	img.src = imgSrc;
 	img.width = '185';
@@ -50,7 +50,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-	e2.href = "javascript:addLoopDiv()";
+	e2.href = "javascript:addLoopDivSpcl(url)";
 	e2.innerHTML = title;
 	h3.appendChild(e2);
 	field.appendChild(h3);
