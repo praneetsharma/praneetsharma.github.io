@@ -35,7 +35,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
 	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDiv()";
+	e1.href = "javascript:addLoopDiv(url)";
 	var img = document.createElement("img");
 	img.src = imgSrc;
 	img.width = '185';
