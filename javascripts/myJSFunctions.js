@@ -344,7 +344,7 @@ function youtubeSearch()
 			searchResultsResponse = "asd";
 			searchResultsResponse = document.getElementById('response').innerHTML;		
 			searchResultsResponse = youtubeResponse			
-			parseSearchResponse(searchResultsResponse);
+			//parseSearchResponse(searchResultsResponse);
 		});
 		
 	}
