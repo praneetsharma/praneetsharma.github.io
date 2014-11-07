@@ -5,6 +5,16 @@
 var youtubeResponse = "";
 
 
+function clearSearchBox()
+{
+	var parentObj = document.getElementsById('searchResultsList');
+	var removeObj = document.getElementById('singleSearchResult');
+	parentObj.removeChild(removeObj);
+	
+	var newChildObj = document.createElement('div');
+	newChildObj.id = 'singleSearchResult';
+	parentObj.appendChild(newChildObj);
+}
 
 function parseSearchResponse(response)
 {
@@ -27,8 +37,10 @@ function parseSearchResponse(response)
 
 function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
-	var localUrl = url;
+
+	clearSearchBox();
 	
+	var localUrl = url;
 	
 	$.getScript("http://praneetsharma.github.io/javascripts/myJSFunctions.js", function(){
 		//addUrlToMap

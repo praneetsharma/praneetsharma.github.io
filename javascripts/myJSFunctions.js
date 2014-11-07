@@ -382,6 +382,10 @@ function closeLoopDiv(requestedLoopDivCount)
 
 
 
+
+
+
+
 function addUrlToMap(url)
 {
 	
