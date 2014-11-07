@@ -13,6 +13,9 @@ divArr = [];
 var searchResultsResponse = "";
 
 
+var loopDivIdtoUrlMap = {};
+
+
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
@@ -376,6 +379,16 @@ function closeLoopDiv(requestedLoopDivCount)
 	curCount = curCount - 1;
 	
 }
+
+
+
+function addUrlToMap(url)
+{
+	
+}
+
+
+
 
 function runVideoLoopCountTimes(loopDivId)
 {

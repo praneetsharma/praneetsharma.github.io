@@ -18,16 +18,22 @@ function parseSearchResponse(response)
 		var url = "https://www.youtube.com/watch?v=" + obj.items[i].id.videoId;
 		var videoDescr = obj.items[i].snippet.description;
 		var uploaderInfo = obj.items[i].snippet.channelTitle;
-		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr);
+		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr, i);
 	}
 }
 
 
 
 
-function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
+function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
 	var localUrl = url;
+	
+	
+	$.getScript("http://praneetsharma.github.io/javascripts/myJSFunctions.js", function(){
+		//addUrlToMap
+	});
+	
 
 	var parentObj = document.getElementById('singleSearchResult');
 	
@@ -36,8 +42,9 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	//adding thumbnail
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
+	thumbnailDiv.id = 'tnail-'+i;
 	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDivSpcl(localUrl)";
+	e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	var img = document.createElement("img");
 	img.src = imgSrc;
 	img.width = '185';
@@ -51,7 +58,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr)
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-	e2.href = "javascript:addLoopDivSpcl(localUrl)";
+	e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	e2.innerHTML = title;
 	h3.appendChild(e2);
 	field.appendChild(h3);
