@@ -7,7 +7,7 @@ var youtubeResponse = "";
 
 function clearSearchBox()
 {
-	var parentObj = document.getElementsById('searchResultsList');
+	var parentObj = document.getElementById('searchResultsList');
 	var removeObj = document.getElementById('singleSearchResult');
 	parentObj.removeChild(removeObj);
 	
