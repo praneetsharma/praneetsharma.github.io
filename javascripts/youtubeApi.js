@@ -15,7 +15,7 @@ function parseSearchResponse(response)
 	{
 		var title = obj.items[i].snippet.title;
 		var thumbnail = obj.items[i].snippet.thumbnails.medium;
-		var url = "https://www.youtube.com/watch?v=" + obj.times[i].id.videoId;
+		var url = "https://www.youtube.com/watch?v=" + obj.items[i].id.videoId;
 		var videoDescr = obj.items[i].snippet.description;
 		var uploaderInfo = obj.items[i].snippet.channelTitle;
 		oneSearchResult(url, thumbnail, title, uploaderInfo, videoDescr);
