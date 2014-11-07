@@ -273,7 +273,8 @@ function addLoopDiv()
 
 function addLoopDiv(url)
 {
-
+	alert(url);
+	
 	//remove existing errors being shown on screen
 	clearErrorsBeingShown();
 
