@@ -16,6 +16,28 @@ var searchResultsResponse = "";
 var loopDivIdtoUrlMap = {};
 
 
+
+
+function hideDiv(id)
+{
+	var displayState = document.getElementById(id).style.display;
+	if(displayState == 'block')
+	{
+		document.getElementById(id).style.display = 'none';
+	}
+}
+
+
+function showDiv(id)
+{
+	var displayState = document.getElementById(id).style.display;
+	if(displayState == 'none')
+	{
+		document.getElementById(id).style.display = 'block';
+	}
+}
+
+
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
