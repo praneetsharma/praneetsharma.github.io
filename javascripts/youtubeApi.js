@@ -92,7 +92,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function onYouTubeIframeAPIReady() {
+/*function onYouTubeIframeAPIReady() {
 
 
 	// Load the IFrame Player API code asynchronously.
@@ -114,7 +114,7 @@ function onYouTubeIframeAPIReady() {
       'onError': onPlayerError
     }
   });
-}
+}*/
 
 function playVideoInBox()
 {
