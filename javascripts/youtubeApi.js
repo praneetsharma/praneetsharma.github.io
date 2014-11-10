@@ -100,6 +100,9 @@ function playVideoInBox()
 			hideDiv("singleSearchResult");
 			showDiv("videoBox");
 	});
+	
+	$("#player").loadVideoById("bHQqvYy5KYo", 5, "large");
+	
 }
 
 
