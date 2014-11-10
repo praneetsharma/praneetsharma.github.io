@@ -146,8 +146,8 @@ function validateYoutubeURL(urlId, errorId)
 function scrollToParticularDiv(divId)
 {
 	$("body").animate({
-         scrollTop: $("#"+divId).offset().top
-     }, 2000);
+         scrollTop: $("#"+divId).offset().top - 100
+     }, 300);
 	//$('body').scrollTo('#'+divIdn,{duration:'slow', offsetTop : '50'});
 	//document.getElementById(divId).scrollIntoView();
 }
@@ -230,7 +230,7 @@ function addFirstLoopDiv()
 	
 	document.getElementById("loopMain").appendChild(superLocalDiv);
 	
-	scrollToParticularDiv('field-'+divId);
+	//scrollToParticularDiv('field-'+divId);
 	
 	highlightDiv('localLoopDiv-'+divId);
 	
@@ -457,9 +457,10 @@ function runVideoLoopCountTimes(loopDivId)
 
 function playVideoOnBox()
 {
-
-	showVideoBox("videoBox");
 	hideDiv("singleSearchResult");
+	
+	showVideoBox("videoBox");
+	
 	
 	var videoBoxObj = document.getElementById("videoBox");
 	
