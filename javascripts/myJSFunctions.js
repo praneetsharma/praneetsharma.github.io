@@ -34,6 +34,27 @@ function showErrorDiv(errorId)
 	}
 }
 
+
+function hideVideoBox(boxId)
+{
+	var displayState = document.getElementById(boxId).style.display;
+	if(displayState == 'block')
+	{
+		document.getElementById(boxId).style.display = 'none';
+	}
+}
+
+
+function showVideoBox(boxId)
+{
+	var displayState = document.getElementById(boxId).style.display;
+	if(displayState == 'none')
+	{
+		document.getElementById(boxId).style.display = 'block';
+	}
+}
+
+
 function eraseTextFld(id)
 {
 	document.getElementById(id).value = '';
@@ -410,6 +431,9 @@ function runVideoLoopCountTimes(loopDivId)
 
 function playVideoOnBox()
 {
+
+	showVideoBox("videoBox");
+	
 	var videoBoxObj = document.getElementById("videoBox");
 	
 	var len = divArr.length;
