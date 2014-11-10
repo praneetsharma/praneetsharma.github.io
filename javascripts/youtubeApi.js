@@ -128,7 +128,7 @@ function playVideoInBox()
 	});
 	
 	player.loadVideoById("DdTLXQNOA2s", 0, "large");
-	player.cueVideoById("DdTLXQNOA2s", 0, "large");
+	//player.cueVideoById("DdTLXQNOA2s", 0, "large");
 	//$("#player").loadVideoById("bHQqvYy5KYo", 5, "large");
 	
 }
