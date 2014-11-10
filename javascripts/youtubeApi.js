@@ -92,7 +92,20 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-
+function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('player', {
+    width: 1280,
+    height: 720,
+    videoId: 'M7lc1UVf-VE',
+    events: {
+      'onReady': onPlayerReady,
+      'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+      'onStateChange': onPlayerStateChange,
+      'onError': onPlayerError
+    }
+  });
+}
 
 function playVideoInBox()
 {
