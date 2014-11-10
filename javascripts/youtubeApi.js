@@ -94,7 +94,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-playVideoInBox()
+function playVideoInBox()
 {
 	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			//hideDiv("singleSearchResult");
