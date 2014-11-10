@@ -21,7 +21,7 @@ var loopDivIdtoUrlMap = {};
 function hideDiv(id)
 {
 	var displayState = document.getElementById(id).style.display;
-	if(displayState == 'block')
+	if(displayState != 'block')
 	{
 		document.getElementById(id).style.display = 'none';
 	}
