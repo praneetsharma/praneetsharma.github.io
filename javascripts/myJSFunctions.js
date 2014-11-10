@@ -41,7 +41,7 @@ function showDiv(id)
 function hideErrorDiv(errorId)
 {
 	var displayState = document.getElementById(errorId).style.display;
-	if(displayState == 'block')
+	if(displayState != 'none')
 	{
 		document.getElementById(errorId).style.display = 'none';
 	}
@@ -60,7 +60,7 @@ function showErrorDiv(errorId)
 function hideVideoBox(boxId)
 {
 	var displayState = document.getElementById(boxId).style.display;
-	if(displayState == 'block')
+	if(displayState != 'none')
 	{
 		document.getElementById(boxId).style.display = 'none';
 	}
