@@ -93,6 +93,18 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
+
+playVideoInBox()
+{
+	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
+			hideDiv("singleSearchResult");
+			showDiv("videoBox");
+	});
+}
+
+
+
+
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
 	//youtubeResponse = responseString;
