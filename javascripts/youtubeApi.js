@@ -92,7 +92,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function onYouTubeIframeAPIReady() {
+/*function onYouTubeIframeAPIReady() {
 
 	// Load the IFrame Player API code asynchronously.
 	  var tag = document.createElement('script');
@@ -110,7 +110,7 @@ function onYouTubeIframeAPIReady() {
 		  videoId: 'M7lc1UVf-VE'
 		});
 	  }
-}
+}*/
 
 function playVideoInBox()
 {
