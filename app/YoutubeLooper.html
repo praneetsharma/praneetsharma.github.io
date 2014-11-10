@@ -142,6 +142,7 @@
 
 			  // Replace the 'ytplayer' element with an <iframe> and
 			  // YouTube player after the API code downloads.
+			  
 			  var player;
 			  
 			  function onYouTubePlayerAPIReady() {
@@ -150,6 +151,7 @@
 				  width: '640',
 				  videoId: 'M7lc1UVf-VE'
 				});
+				setPlayer(player);
 			  } 
 			</script>
 			

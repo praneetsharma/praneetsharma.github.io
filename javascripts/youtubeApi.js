@@ -5,7 +5,15 @@
 var youtubeResponse = "";
 
 var searchId = 0;
-var player;
+var glbPlayer;
+
+
+function setPlayer(player)
+{
+	glbPlayer = player;
+}
+
+
 function clearSearchBox()
 {
 	var parentObj = document.getElementById('searchResultsList');
