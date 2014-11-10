@@ -122,7 +122,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function playVideoInBox()
 {
-	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
+	$.getScript("http://praneetsharma.github.io/javascripts/myJSFunctions.js", function(){
 			hideDiv("singleSearchResult");
 			showDiv("videoBox");
 	});
