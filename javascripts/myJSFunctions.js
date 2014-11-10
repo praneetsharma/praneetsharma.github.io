@@ -455,6 +455,7 @@ function playVideoOnBox()
 {
 
 	showVideoBox("videoBox");
+	hideDiv("searchResultsList");
 	
 	var videoBoxObj = document.getElementById("videoBox");
 	
