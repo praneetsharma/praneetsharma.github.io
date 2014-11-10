@@ -5,7 +5,7 @@
 var youtubeResponse = "";
 
 var searchId = 0;
-
+var player;
 function clearSearchBox()
 {
 	var parentObj = document.getElementById('searchResultsList');
@@ -93,7 +93,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 function onYouTubeIframeAPIReady() {
-  var player;
+  //var player;
   player = new YT.Player('player', {
     width: 1280,
     height: 720,
@@ -114,7 +114,8 @@ function playVideoInBox()
 			showDiv("videoBox");
 	});
 	
-	$("#player").loadVideoById("bHQqvYy5KYo", 5, "large");
+	player.loadVideoById("bHQqvYy5KYo", 5, "large");
+	//$("#player").loadVideoById("bHQqvYy5KYo", 5, "large");
 	
 }
 
