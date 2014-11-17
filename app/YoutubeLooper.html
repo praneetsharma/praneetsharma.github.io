@@ -30,23 +30,35 @@
 	
 	<script>
 		$(document).ready(function() {  
-			var stickyNavTop = $('.nav').offset().top;  
-			  
+			var stickyNavTop = $('.nav').offset().top;  			  
 			var stickyNav = function(){  
-			var scrollTop = $(window).scrollTop();  
-				   
+			var scrollTop = $(window).scrollTop();  				   
 			if (scrollTop > stickyNavTop) {   
 				$('.nav').addClass('sticky');  
 			} else {  
 				$('.nav').removeClass('sticky');   
 			}  
-			};  
-			  
-			stickyNav();  
-			  
+			}; 			  
+			stickyNav();  			  
 			$(window).scroll(function() {  
 				stickyNav();  
 			});  
+			
+			
+			var leftDivTop = $('#leftDiv').offset().top;  			  
+			var leftDivNav = function(){  
+			scrollTop = $(window).scrollTop();  				   
+			if (scrollTop > leftDivTop) {   
+				$('#leftDiv').addClass('sticky');  
+			} else {  
+				$('#leftDiv').removeClass('sticky');   
+			}  
+			}; 			  
+			leftDivNav();  			  
+			$(window).scroll(function() {  
+				leftDivNav();  
+			}); 
+			
 		}); 
 	</script>
 	
