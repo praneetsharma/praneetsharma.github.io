@@ -22,6 +22,11 @@
 	padding:6px 6px 6px 6px;
 }
 
+.playOptions{
+	position:relative; 
+	padding:6px 6px 6px 6px;
+}
+
 thumbnail, videoInfo{
 	display:inline;
 }

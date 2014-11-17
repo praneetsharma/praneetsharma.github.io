@@ -56,14 +56,21 @@
 	<div id="container">
 	
 		<div class="nav" style="background-color:#A52A2A">  
-			<div class="navTab">
+			<div class="navTab" style="display:inline-block;">
 				<a href="" style="color:white">Youtube Looper <sup>&beta;</sup></a>
 				<input type="search" id="searchBoxInp" name="filter.q" results="5" value="" placeholder="search for youtube videos" size="40" />
-				<input type="submit" id="searchBoxBtn" value="Search" onclick="youtubeSearch()" />	
+				<input type="submit" id="searchBoxBtn" value="Search" onclick="youtubeSearch()" />		
 			</div>
+			
+			<div class="playOptions" style="display:inline-block;float:right">
+					<input type="submit" id="prevVideo" value="<<" onclick="" />	
+					<input type="submit" id="curVideo" value="||" style="" onclick="" />
+					<input type="submit" id="nextVideo" value=">>" style="" onclick="" />
+					<input type="submit" id="removeVideo" value="X" style="" onclick="" />
+			</div> 
 		</div>
 	
-      <div class="inner">
+	  <div class="inner">
 	  
 		
 		
