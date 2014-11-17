@@ -32,6 +32,11 @@
 	width:30%
 }
 
+.ytplayer{
+	padding-top: 140px;
+}
+
+
 thumbnail, videoInfo{
 	display:inline;
 }
