@@ -89,6 +89,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	field.appendChild(metaDiv);
 	var descrDiv = document.createElement('div');
 	descrDiv.class = 'videoDescr';
+	descrDiv.style = 'width:300px;';
 	descrDiv.innerHTML = videoDescr;
 	field.appendChild(descrDiv);
 	
