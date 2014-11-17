@@ -10,13 +10,18 @@
     position: fixed;  
     width: 100%;  
     left: 0;  
-    top: 0;  
+    top: 10;  
     z-index: 100;  
     border-top: 0;  
 } 
 
 
 /*For search-box*/
+
+.nav{
+	width: 90%
+}
+
 .navTab{
 	position:relative; 
 	padding:10px 10px 10px 10px;

@@ -145,7 +145,7 @@ function validateYoutubeURL(urlId, errorId)
 
 function scrollToParticularDiv(divId)
 {
-	$("body").animate({
+	$("loopMain").animate({
          scrollTop: $("#"+divId).offset().top - 100
      }, 300);
 	//$('body').scrollTo('#'+divIdn,{duration:'slow', offsetTop : '50'});
