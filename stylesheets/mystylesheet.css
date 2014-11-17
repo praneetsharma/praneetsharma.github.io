@@ -10,10 +10,21 @@
     position: fixed;  
     width: 100%;  
     left: 0;  
-    top: 10;  
+    top: 0;  
     z-index: 100;  
     border-top: 0;  
 } 
+
+/*For loopDiv bar*/
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 12;  
+    z-index: 100;  
+    border-top: 0;  
+} 
+
 
 
 /*For search-box*/
