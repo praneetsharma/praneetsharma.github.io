@@ -32,30 +32,35 @@
 	padding-top: 35px;
 	padding-left: 30px;
 	display: inline-block;	
-	position: relative;
-	left: 50%;
-	float: left;
+	/*position: relative;
+	left: 33%;
+	float: left;*/
+	float: right;
+	overflow-y: scroll;
 }
 
+
 #urDiv{
-	position: relative;
+	/*position: relative;
 	float: left;
-	left: -50%;
+	left: -50%;*/
 }
 
 #drDiv{
-	position: relative;
+	/*position: relative;
 	float: left;
-	left: -50%;
+	left: -50%;*/
 }
 
 #leftDiv{
 	float: left;
 	display: inline-block;
+	overflow-y: hidden;
+	position: absolute;
 }
 
 #leftDiv:hover{
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #ytplayer{
