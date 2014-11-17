@@ -30,13 +30,14 @@
 
 #rightDiv{
 	padding-top: 35px;
-	padding-left: 30px;
+	padding-left: 10px;
 	display: inline-block;	
 	/*position: relative;
 	left: 33%;
 	float: left;*/
 	float: right;
-	overflow-y: scroll;
+	width: 50%
+	
 }
 
 
@@ -47,21 +48,28 @@
 }
 
 #drDiv{
+	padding-top: 20px;
+	
 	/*position: relative;
 	float: left;
-	left: -50%;*/
+	left: -70%;*/
 }
 
 #leftDiv{
+	padding-left: 20px;
 	float: left;
 	display: inline-block;
-	overflow-y: hidden;
-	position: absolute;
+	height: 350px;
+	width: 30%;
 }
 
-#leftDiv:hover{
-	overflow-y: auto;
+
+#loopMain{
+	overflow: scroll;
+	height: 100%;
 }
+
+
 
 #ytplayer{
 	margin: 0 auto;
