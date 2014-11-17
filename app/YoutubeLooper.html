@@ -59,7 +59,7 @@
 			<div class="navTab" style="display:inline-block;">
 				<a href="" style="color:white">Youtube Looper <sup>&beta;</sup></a>
 				<input type="search" id="searchBoxInp" name="filter.q" results="5" value="" placeholder="search for youtube videos" size="40" />
-				<input type="submit" id="searchBoxBtn" value="Search" onclick="youtubeSearch()" />		
+				<input type="submit" id="searchBoxBtn" value="Search" style="left:50%;" onclick="youtubeSearch()" />		
 			</div>
 			
 			<div class="playOptions" style="display:inline-block;float:right">
@@ -72,96 +72,27 @@
 	
 	  <div class="inner">
 	  
+		<div id="leftDiv" style="float:left;display:inline-block">
 		
-		
-		<header>
-          <h1>Youtube Looper <sup>&beta;</sup></h1>
-          <h2>TAGLINE</h2>
-		</header> 
-	  
-		<hr>
-		
-		
-		<h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features of YOUTUBE LOOPER</h3>
-		<ol>
-			<li> Play multiple youtube videos in loop.
-			<li> Loop videos for the number of times you specify.
-			<li> Loop full video or a part of it.			
-		</ol>
-	  
-		<hr>
-		
-		
-		
-		
-		<hr>
-		
-		<div id="searchResultsList">
-			search results
+			<header>
+			  <h1>Youtube Looper <sup>&beta;</sup></h1>
+			  <h2>TAGLINE</h2>
+			</header> 
+		  
+			<hr>
 			
-			<div id="singleSearchResult" >
-				
-				
-				<!-- <div class="thumbnail">
-					<a href="">
-					<img src="https://i.ytimg.com/vi/jIyTBwrHWig/mqdefault.jpg" width="185" height="104">			
-					</img>
-					</a>
-				</div>
-				
-				<div class="videoInfo">
-					<h2 class="videoTitle">
-						<a href="">TITLE</a>
-					</h2>
-					<div class="uploaderMeta">Uploader</div>
-					<div class="videoDescr">Video Descr</div>
-				</div>
-				
-				<button><b>+</b></button> -->
-				
-				<!--<script>
-					oneSearchResult('', 'https://i.ytimg.com/vi/jIyTBwrHWig/default.jpg', 'Video 1', 'praneet * 10,000 views', 'we talk about anything.');
-				</script> -->
-				
-			</div>
+			
+			<h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features of YOUTUBE LOOPER</h3>
+			<ol>
+				<li> Play multiple youtube videos in loop.
+				<li> Loop videos for the number of times you specify.
+				<li> Loop full video or a part of it.			
+			</ol>
+		  
+			<hr>
 			
 			
 			
-		</div>
-		
-		
-		
-		<div>
-			
-			
-			<div id="ytplayer" ></div>
-
-			<script>
-			  // Load the IFrame Player API code asynchronously.
-			  var tag = document.createElement('script');
-			  tag.src = "https://www.youtube.com/player_api";
-			  var firstScriptTag = document.getElementsByTagName('script')[0];
-			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-			  // Replace the 'ytplayer' element with an <iframe> and
-			  // YouTube player after the API code downloads.
-			  
-			  var player;
-			  
-			  function onYouTubePlayerAPIReady() {
-				player = new YT.Player('ytplayer', {
-				  height: '390',
-				  width: '640',
-				  videoId: 'DdTLXQNOA2s'
-				});
-				setPlayer(player);
-			  } 
-			</script>
-			
-			<iframe id="videoBox" type="text/html" width="728" height="390" allowfullscreen="1" style="display:none"
-				src="">
-			</iframe>
-		
 			<!-- <button type="button" onclick="validateYoutubeURL('videoUrl-1','invalidURL-1')">LOOP</button> -->
 			<button type="button" onclick="playVideoInBox()">LOOP</button>
 			<br /><br />
@@ -179,21 +110,99 @@
 				<div style="display:none" class="error" name="toggleError" id="errorBox-1" value=""></div> -->
 				
 			
-			</div>		
-
-
+			</div>
 			
+			
+		
+		</div>
+		
+		
+		<div id="rightDiv" style="float:right;display:inline-block">
+		
+		
+			<div id="searchResultsList">			
+				
+				<div id="singleSearchResult" >
+					search results
+					
+					<!-- <div class="thumbnail">
+						<a href="">
+						<img src="https://i.ytimg.com/vi/jIyTBwrHWig/mqdefault.jpg" width="185" height="104">			
+						</img>
+						</a>
+					</div>
+					
+					<div class="videoInfo">
+						<h2 class="videoTitle">
+							<a href="">TITLE</a>
+						</h2>
+						<div class="uploaderMeta">Uploader</div>
+						<div class="videoDescr">Video Descr</div>
+					</div>
+					
+					<button><b>+</b></button> -->
+					
+					<!--<script>
+						oneSearchResult('', 'https://i.ytimg.com/vi/jIyTBwrHWig/default.jpg', 'Video 1', 'praneet * 10,000 views', 'we talk about anything.');
+					</script> -->
+					
+				</div>				
+				
+			</div>
+			
+			
+			
+			<div>				
+				
+				<div id="ytplayer" ></div>
+
+				<script>
+				  // Load the IFrame Player API code asynchronously.
+				  var tag = document.createElement('script');
+				  tag.src = "https://www.youtube.com/player_api";
+				  var firstScriptTag = document.getElementsByTagName('script')[0];
+				  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+				  // Replace the 'ytplayer' element with an <iframe> and
+				  // YouTube player after the API code downloads.
+				  
+				  var player;
+				  
+				  function onYouTubePlayerAPIReady() {
+					player = new YT.Player('ytplayer', {
+					  height: '390',
+					  width: '640',
+					  videoId: 'DdTLXQNOA2s'
+					});
+					setPlayer(player);
+				  } 
+				</script>
+				
+				<iframe id="videoBox" type="text/html" width="728" height="390" allowfullscreen="1" style="display:none"
+					src="">
+				</iframe>			
+
+
+				
+			</div>
+	  
 		</div>
 	  
-	  
-	  
-		<footer>
-			For suggestions, contact <a href="mailto:praneet.223@gmail.com">@praneet</a>
-		</footer>
+		
+		
 	  
 	  </div>
 	</div> 
+	
+	<div>
+		
+	<footer>
+		For suggestions, contact <a href="mailto:praneet.223@gmail.com">@praneet</a>
+	</footer>
+	</div>
+	
   </body>
   
+  	
   
  </html>

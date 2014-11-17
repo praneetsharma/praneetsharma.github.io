@@ -90,7 +90,9 @@ header h2 {
 }
 
 .inner {
-  width: 1320px; /*default = 620px*/
+  /*width: 1320px;*/ /*default = 620px*/
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 }
 
