@@ -29,16 +29,14 @@
 
 
 #rightDiv{
-	position: relative;
 	padding-top: 35px;
 	padding-left: 30px;
-	display: inline;	
+	display: inline-block;	
 }
 
 #leftDiv{
 	float: left;
-	display: inline;
-	width:30%;
+	display: inline-block;
 }
 
 #leftDiv:hover{
@@ -46,6 +44,8 @@
 }
 
 #ytplayer{
+	width: 200%;
+	margin: 0 auto;
 }
 
 
