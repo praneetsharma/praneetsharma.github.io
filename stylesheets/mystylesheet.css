@@ -32,6 +32,21 @@
 	padding-top: 35px;
 	padding-left: 30px;
 	display: inline-block;	
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+#urDiv{
+	position: relative;
+	float: left;
+	left: -50%;
+}
+
+#drDiv{
+	position: relative;
+	float: left;
+	left: -50%;
 }
 
 #leftDiv{
