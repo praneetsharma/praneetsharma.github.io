@@ -28,12 +28,25 @@
 }
 
 
-.leftDiv{
-	width:30%
+#rightDiv{
+
+	float: right;
+	display: inline;
+	
 }
 
-.ytplayer{
-	padding-top: 140px;
+#leftDiv{
+	float: left;
+	display: inline;
+	width:30%;
+}
+
+#leftDiv:hover{
+	overflow-y: scroll;
+}
+
+#ytplayer{
+	padding-top: 40px;
 }
 
 
