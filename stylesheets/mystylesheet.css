@@ -16,7 +16,7 @@
 } 
 
 /*For loopDiv bar*/
-.sticky {  
+.sticky2 {  
     position: fixed;  
     width: 100%;  
     left: 0;  
@@ -30,7 +30,6 @@
 /*For search-box*/
 
 .nav{
-	width: 90%
 }
 
 .navTab{
