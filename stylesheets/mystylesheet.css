@@ -19,12 +19,12 @@
 /*For search-box*/
 .navTab{
 	position:relative; 
-	padding:16px 6px 6px 6px;
+	padding:10px 10px 10px 10px;
 }
 
 .playOptions{
 	position:relative; 
-	padding:6px 6px 6px 6px;
+	padding:10px 10px 10px 10px;
 }
 
 
@@ -66,10 +66,13 @@
 
 
 #loopMain{
-	overflow: scroll;
+	overflow-y: hidden;
 	height: 100%;
 }
 
+#loopMain:hover{
+	overflow-y: auto;
+}
 
 
 #ytplayer{
