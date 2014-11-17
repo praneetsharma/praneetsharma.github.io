@@ -48,7 +48,7 @@
 			var leftDivTop = $('#leftDiv').offset().top;  			  
 			var leftDivNav = function(){  
 			scrollTop = $(window).scrollTop();  				   
-			if (scrollTop > leftDivTop) {   
+			if (scrollTop > leftDivTop - 10) {   
 				$('#leftDiv').addClass('sticky');  
 			} else {  
 				$('#leftDiv').removeClass('sticky');   
