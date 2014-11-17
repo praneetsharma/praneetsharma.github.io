@@ -30,7 +30,7 @@
 	
 	<script>
 		$(document).ready(function() {  
-			var stickyNavTop = $('.nav').offset().top;  			  
+			/*var stickyNavTop = $('.nav').offset().top;  			  
 			var stickyNav = function(){  
 			var scrollTop = $(window).scrollTop();  				   
 			if (scrollTop > stickyNavTop) {   
@@ -42,7 +42,7 @@
 			stickyNav();  			  
 			$(window).scroll(function() {  
 				stickyNav();  
-			});  
+			});*/  
 			
 			
 			/*var leftDivTop = $('#leftDiv').offset().top;  			  
@@ -68,7 +68,7 @@
 	<div id="container">
 	
 		<div class="nav">  
-			<div class="navTab" style="display:inline-block;">
+			<div class="navTab">
 				<a href="" style="color:white">Youtube Looper <sup>&beta;</sup></a>
 				<form method='POST' onsubmit='youtubeSearch();return false;' style="display:inline-block;height:5px;background-color:#A52A2A;"> 
 					<input type="search" id="searchBoxInp" name="filter.q" results="5" value="" placeholder="search for youtube videos..." size="80" />

@@ -31,11 +31,13 @@
 
 .nav{
 	background-color:#A52A2A;
+	position: fixed;
 }
 
 .navTab{
 	position:relative; 
 	padding:10px 10px 10px 10px;
+	display:inline-block;
 }
 
 .playOptions{
@@ -80,6 +82,8 @@
 	display: inline-block;
 	height: 350px;
 	width: 30%;
+	
+	position: fixed;
 }
 
 
