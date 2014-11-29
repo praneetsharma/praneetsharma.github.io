@@ -20,7 +20,7 @@ var loopDivIdtoUrlMap = {};
 $('#leftDiv').hover{
   	 function () {
      $('#leftDiv').animate({
-         left: '100px',
+         left: '20px',
          background: '#ccc'
      }, 100);
  	}
