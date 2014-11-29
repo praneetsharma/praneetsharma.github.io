@@ -18,14 +18,14 @@ var loopDivIdtoUrlMap = {};
 
 $(document).ready(function() {
   
-  	/*$('#leftDiv').hover{
+  	$('#leftDiv').hover{
   	 function () {
      $('#leftDiv').animate({
          left: '20px',
          background: '#ccc'
      }, 100);
  	}
-});*/
+	});
   
 });
 
