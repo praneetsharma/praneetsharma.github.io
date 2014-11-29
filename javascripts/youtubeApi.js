@@ -25,6 +25,13 @@ function clearSearchBox()
 	parentObj.appendChild(newChildObj);
 }
 
+
+function fillPopVidBox(response)
+{
+ 	 
+}
+
+
 function parseSearchResponse(response)
 {
 	clearSearchBox();
