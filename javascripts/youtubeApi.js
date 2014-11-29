@@ -96,6 +96,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	descrDiv.id = 'videoDescr';
 	descrDiv.style.width = '700px';
 	descrDiv.innerHTML = videoDescr;
+  	videoInfoDiv.appendChild(descrDiv);
 	field.appendChild(descrDiv);
 	
 	
