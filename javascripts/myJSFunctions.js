@@ -18,7 +18,7 @@ var loopDivIdtoUrlMap = {};
 
 
 $('#leftDIv').hover{
-  
+  	
 }
 
 
