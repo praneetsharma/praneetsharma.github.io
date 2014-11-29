@@ -79,6 +79,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	var videoInfoDiv = document.createElement('div');
 	videoInfoDiv.style.display = 'inline-block';
   	videoInfoDiv.style.verticalAlign = 'top';
+  	videoInfoDiv.style.paddingLeft = '6px';
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
