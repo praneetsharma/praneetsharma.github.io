@@ -52,6 +52,57 @@ function fillPopVidBox(response)
 function fillSinglePopVid()
 {
  	var parentObj = document.getElementById('box');
+  	var field = document.createElement('fieldset');
+	
+	//adding thumbnail
+	var thumbnailDiv = document.createElement('div');
+	thumbnailDiv.class="thumbnail";
+	thumbnailDiv.id = 'tnail-'+i;
+	thumbnailDiv.style.display = 'inline-block';
+	var e1 = document.createElement('a');
+	e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
+	var img = document.createElement("img");
+	img.src = imgSrc;
+	img.width = '185';
+	img.height = '104';
+	e1.appendChild(img);
+	thumbnailDiv.appendChild(e1);
+	field.appendChild(thumbnailDiv);
+	
+	//adding title, uploaderInfo, and videoDescr
+	var videoInfoDiv = document.createElement('div');
+	videoInfoDiv.style.display = 'inline-block';
+  	videoInfoDiv.style.verticalAlign = 'top';
+  	videoInfoDiv.style.paddingLeft = '12px';
+	var h3 = document.createElement('h3');
+	h3.class = 'videoTitle';
+	var e2 = document.createElement('a');
+	e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
+	e2.innerHTML = title;
+	h3.appendChild(e2);
+  	videoInfoDiv.appendChild(h3);
+	/*field.appendChild(h3);*/
+	var metaDiv = document.createElement('div');
+	metaDiv.class = 'uploaderMeta';
+  	metaDiv.style.verticalAlign = 'top';
+	metaDiv.innerHTML = uploaderInfo;
+  	videoInfoDiv.appendChild(metaDiv);
+	/*field.appendChild(metaDiv);*/
+	var descrDiv = document.createElement('div');
+	descrDiv.class = 'videoDescr';
+	descrDiv.id = 'videoDescr';
+  	descrDiv.style.verticalAlign = 'top';
+	descrDiv.style.width = '700px';
+	descrDiv.innerHTML = videoDescr;
+  	videoInfoDiv.appendChild(descrDiv);
+	/*field.appendChild(descrDiv);*/
+  
+  	field.appendChild(videoInfoDiv);
+	
+  	field.style.paddingBottom = '10px';
+	
+	
+	parentObj.appendChild(field);
 }
 
 
