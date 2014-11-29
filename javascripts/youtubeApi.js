@@ -297,6 +297,7 @@ function searchTrending(){
   	
   	xmlhttp.open("GET", url, true);
   	vr rsp = JSON.parse(url);
+  	alert('hi');
  	 
 }
 
