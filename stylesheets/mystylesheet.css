@@ -120,7 +120,7 @@ thumbnail, videoInfo{
 
 #searchBoxBtn{
  	border: 1px solid #ccc;
-    padding: 0 0px;
+    padding: 0 10px;
     vertical-align: middle;
     display: inline-block;
     font: bold 11px/28px Arial;
