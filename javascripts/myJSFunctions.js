@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
      $('#leftDiv').animate({
          left: '0',
          background: '#ccc'
-     }
+         });
      });
     });
   
