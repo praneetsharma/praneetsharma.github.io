@@ -144,6 +144,22 @@ thumbnail, videoInfo{
     margin-right: 15px;
 }
 
+
+#searchBoxBtn{
+ 	border: 1px solid #ccc;
+    padding: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font: bold 11px/28px Arial;
+    color: #454545;
+    background: #FAFAFA;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+
+
+
 .round-button {
     display:block;
     width:30px;
