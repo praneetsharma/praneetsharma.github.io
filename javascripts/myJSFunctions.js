@@ -43,6 +43,7 @@ jQuery(document).ready(function() {
   	$(function() {
        
         $('#boxclose').click(function(){
+          	clearPopVidBox()
             $('#box').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
