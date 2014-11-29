@@ -24,12 +24,6 @@ $(document).ready(function() {
         }, {
             queue: false
         });
-    }, function () {
-        $("#leftDiv").animate({
-            opacity: "0"
-        }, {
-            queue: false
-        });
     });
   
 });
