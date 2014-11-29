@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
          background: '#ccc'
      }, 100, function () {
          $('#leftDiv').css({
-             display: 'none'
+             display: 'block'
          });
      });
     });
