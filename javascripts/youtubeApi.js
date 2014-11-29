@@ -105,7 +105,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
   
   	field.appendChild(videoInfoDiv);
 	
-  	field.style.paddingBottom: '10px';
+  	field.style.paddingBottom = '10px';
 	
 	
 	parentObj.appendChild(field);
