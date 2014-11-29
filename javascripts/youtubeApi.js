@@ -290,6 +290,12 @@ function searchPopular() {
 	
 }
 
+function searchTrending(){
+  	
+  	
+ 	 
+}
+
 
 function search(queryTxt) {
     // Use the JavaScript client library to create a search.list() API call.
