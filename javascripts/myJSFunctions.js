@@ -17,6 +17,11 @@ var loopDivIdtoUrlMap = {};
 
 
 
+$('#leftDIv').hover{
+  
+}
+
+
 
 function hideDiv(id)
 {
