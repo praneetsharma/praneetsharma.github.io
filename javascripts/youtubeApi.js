@@ -189,8 +189,7 @@ function searchPopular() {
     //request.execute(onSearchResponse);
 	request.execute(function(response){
 		var str = JSON.stringify(response.result);
-		youtubeResponse = str;
-		parseSearchResponse(str);
+		fillPopVidBox(str);
 	});
 	
 }
