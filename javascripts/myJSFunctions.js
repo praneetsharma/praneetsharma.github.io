@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
   	$(function() {
     $('#activator').click(function(){
         $('#overlay').fadeIn(200,function(){
-            $('#box').animate({'top':'20px'},200);
+            $('#box').animate({'top':'50px'},200);
         });
         return false;
     });
