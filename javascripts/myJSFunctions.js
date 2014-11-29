@@ -17,12 +17,9 @@ var loopDivIdtoUrlMap = {};
 
 
 
-$('#leftDIv').hover{
+$('#leftDiv').hover{
   	 function () {
-     $('.ul_div ul').css({
-         display: 'block'
-     });
-     $('.ul_div ul').animate({
+     $('#leftDiv').animate({
          left: '100px',
          background: '#ccc'
      }, 100);
