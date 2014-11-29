@@ -30,8 +30,8 @@ function fillPopVidBox(response)
 {
   
   	$('#overlay').fadeIn(200,function(){
-          $('#box').animate({'top':'50px'},200);
-        });
+      	$('#box').animate({'top':'50px'},200);
+    });
     
         
 }
