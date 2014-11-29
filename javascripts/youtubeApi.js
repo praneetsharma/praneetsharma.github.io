@@ -295,7 +295,7 @@ function searchTrending(){
   	var xmlhttp = new XMLHttpRequest();
   	var url1 = "https://gdata.youtube.com/feeds/api/standardfeeds/on_the_web?alt=json";
   	
-  	xmlhttp.open("GET", url, true);
+  	xmlhttp.open("GET", url1, true);
   	var rsp = JSON.parse(url1);
   	alert('hi');
  	 
