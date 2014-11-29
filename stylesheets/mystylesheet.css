@@ -109,6 +109,11 @@ thumbnail, videoInfo{
 	display:inline;
 }
 
+
+#searchBoxInp{
+ 		 
+}
+
 #searchBoxBtn{
  	border: 1px solid #ccc;
     padding: 0 10px;
