@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
   
   	$("#leftDiv").hover(function () {
         $("#leftDiv").animate({
-            left: '100px'
+            right: '100px'
         });
     });
   
