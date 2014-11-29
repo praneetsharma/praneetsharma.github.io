@@ -63,7 +63,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
   	localUrl = url;
   
- 	var parentObj = document.getElementById('box');
+ 	var parentObj = document.getElementById('boxChild');
   	var field = document.createElement('fieldset');
 	
 	//adding thumbnail
