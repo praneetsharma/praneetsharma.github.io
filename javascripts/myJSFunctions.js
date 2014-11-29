@@ -20,11 +20,11 @@ $(document).ready(function() {
   
   	$('#leftDiv').hover{
   	 function () {
-     $('#leftDiv').animate({
-         left: '20px',
-         background: '#ccc'
-     }, 100);
- 	}
+       $('#leftDiv').animate({
+           left: '20px',
+           background: '#ccc'
+       }, 100);
+      
 	});
   
 });
