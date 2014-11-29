@@ -293,6 +293,9 @@ function searchPopular() {
 function searchTrending(){
   	
   	var xmlhttp = new XMLHttpRequest();
+  	var url = "";
+  	
+  	xmlhttp.open("GET", url, true);
  	 
 }
 
