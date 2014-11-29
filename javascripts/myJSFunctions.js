@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
   	$("#leftDiv").hover(
       function () {
         $("#leftDiv").animate({
-            left: '40px'
+            right: '40px'
         });
       
        },
