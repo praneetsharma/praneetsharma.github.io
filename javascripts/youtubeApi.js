@@ -51,7 +51,7 @@ function fillPopVidBox(response)
 
 function fillSinglePopVid()
 {
- 	 
+ 	var parentObj = document.getElementById('singleSearchResult');
 }
 
 
