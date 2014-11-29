@@ -18,7 +18,7 @@ var loopDivIdtoUrlMap = {};
 
 $(document).ready(function() {
   
-}
+});
 /*$('#leftDiv').hover{
   	 function () {
      $('#leftDiv').animate({
