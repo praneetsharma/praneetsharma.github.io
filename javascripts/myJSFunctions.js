@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
   
         function () {
          $('#leftDiv').animate({
-             'marginLeft' : "+=300px"
+             'marginLeft' : "-=300px"
          }, 1000, function () {
              $('#leftDiv').css({
                  display: 'block'
