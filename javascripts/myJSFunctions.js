@@ -40,6 +40,23 @@ jQuery(document).ready(function() {
          });
     });*/
   
+  	$(function() {
+    $('#activator').click(function(){
+        $('#overlay').fadeIn(200,function(){
+            $('#box').animate({'top':'20px'},200);
+        });
+        return false;
+    });
+    $('#boxclose').click(function(){
+        $('#box').animate({'top':'-200px'},500,function(){
+            $('#overlay').fadeOut('fast');
+        });
+    });
+ 
+});
+  
+  	
+  
 });
 
 
