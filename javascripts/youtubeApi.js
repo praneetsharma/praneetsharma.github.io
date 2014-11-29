@@ -51,6 +51,8 @@ function fillPopVidBox(response)
 
 function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
+  	localUrl = url;
+  
  	var parentObj = document.getElementById('box');
   	var field = document.createElement('fieldset');
 	
