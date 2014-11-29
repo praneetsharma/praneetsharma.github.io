@@ -78,7 +78,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	//adding title, uploaderInfo, and videoDescr
 	var videoInfoDiv = document.createElement('div');
 	videoInfoDiv.style.display = 'inline-block';
-  	videoInfoDiv.style.vertical-align = 'top';
+  	videoInfoDiv.style.verticalAlign = 'top';
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
