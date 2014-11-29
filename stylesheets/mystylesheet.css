@@ -85,7 +85,7 @@
 	display: inline-block;
 	height: 350px;
 	width: 30%;
-	z-score: 50
+	z-index: 50
 	position: fixed;
 }
 
