@@ -293,10 +293,10 @@ function searchPopular() {
 function searchTrending(){
   	
   	var xmlhttp = new XMLHttpRequest();
-  	var url = "https://gdata.youtube.com/feeds/api/standardfeeds/on_the_web?alt=json";
+  	var url1 = "https://gdata.youtube.com/feeds/api/standardfeeds/on_the_web?alt=json";
   	
   	xmlhttp.open("GET", url, true);
-  	var rsp = JSON.parse(url);
+  	var rsp = JSON.parse(url1);
   	alert('hi');
  	 
 }
