@@ -28,6 +28,7 @@ function clearSearchBox()
 
 function fillPopVidBox(response)
 {
+  	alert('hi');
  	$('#popVidBtn').click(function(){
             $('#overlay').fadeIn(200,function(){
                 $('#box').animate({'top':'50px'},200);
