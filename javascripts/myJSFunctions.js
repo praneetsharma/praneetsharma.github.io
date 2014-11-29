@@ -30,10 +30,7 @@ jQuery(document).ready(function() {
      $('#leftDiv').animate({
          left: '0',
          background: '#ccc'
-     }, 100, function () {
-         $('#leftDiv').css({
-             display: 'none'
-         });
+     }
      });
     });
   
