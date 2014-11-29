@@ -85,7 +85,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	e2.innerHTML = title;
 	h3.appendChild(e2);
   	videoInfoDiv.appendChild(h3);
-	field.appendChild(h3);
+	/*field.appendChild(h3);*/
 	var metaDiv = document.createElement('div');
 	metaDiv.class = 'uploaderMeta';
 	metaDiv.innerHTML = uploaderInfo;
