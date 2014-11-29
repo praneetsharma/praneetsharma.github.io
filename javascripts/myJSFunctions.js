@@ -18,10 +18,23 @@ var loopDivIdtoUrlMap = {};
 
 jQuery(document).ready(function() {
   
-  	$("#leftDiv").hover(function () {
+  	$("#leftDiv").hover(
+      function () {
         $("#leftDiv").animate({
             right: '40px'
         });
+      
+       },
+
+ 	function () {
+     $('#leftDiv').animate({
+         left: '0',
+         background: '#ccc'
+     }, 100, function () {
+         $('.ul_div ul').css({
+             display: 'none'
+         });
+     });
     });
   
 });
