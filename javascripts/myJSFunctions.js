@@ -41,12 +41,7 @@ jQuery(document).ready(function() {
     });*/
   
   	$(function() {
-        $('#popVidBtn').click(function(){
-            $('#overlay').fadeIn(200,function(){
-                $('#box').animate({'top':'50px'},200);
-            });
-            return false;
-        });
+        
         $('#boxclose').click(function(){
             $('#box').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
