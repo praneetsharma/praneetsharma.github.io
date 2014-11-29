@@ -19,22 +19,22 @@ var loopDivIdtoUrlMap = {};
 jQuery(document).ready(function() {
   
   	$("#leftDiv").hover(
-      function () {
-        $("#leftDiv").animate({
-          'marginLeft' : "-=30px"
-        });
-      
-       },
-
-      function () {
-       $('#leftDiv').animate({
-           left: '0',
-           background: '#ccc'
-       }, 100, function () {
-           $('#leftDiv').css({
-               display: 'block'
-           });
-       });
+        function () {
+          $("#leftDiv").animate({
+            'marginLeft' : "-=30px"
+          });
+        
+         },
+  
+        function () {
+         $('#leftDiv').animate({
+             left: '0',
+             background: '#ccc'
+         }, 100, function () {
+             $('#leftDiv').css({
+                 display: 'block'
+             });
+         });
     });
   
 });
