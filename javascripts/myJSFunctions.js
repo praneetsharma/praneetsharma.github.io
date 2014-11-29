@@ -21,14 +21,14 @@ jQuery(document).ready(function() {
   	$("#leftDiv").hover(
         function () {
           $("#leftDiv").animate({
-            'marginLeft' : "-=30px"
+            'marginLeft' : "-=100px"
           });
         
          },
   
         function () {
          $('#leftDiv').animate({
-             'marginLeft' : "+=30px"
+             'marginLeft' : "+=100px"
          }, 100, function () {
              $('#leftDiv').css({
                  display: 'block'
