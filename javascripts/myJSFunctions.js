@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
         function () {
          $('#leftDiv').animate({
              'marginLeft' : "+=300px"
-         }, 100, function () {
+         }, 1000, function () {
              $('#leftDiv').css({
                  display: 'block'
              });
