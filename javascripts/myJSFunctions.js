@@ -43,7 +43,6 @@ jQuery(document).ready(function() {
   	$(function() {
        
         $('#boxclose').click(function(){
-          alert('hi');
             $('#box').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
