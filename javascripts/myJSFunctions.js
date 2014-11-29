@@ -18,6 +18,10 @@ var loopDivIdtoUrlMap = {};
 
 jQuery(document).ready(function() {
   
+  	$("#leftDiv").animate({
+            'marginLeft' : "-=300px"
+          });
+  
   	$("#leftDiv").hover(
         function () {
           $("#leftDiv").animate({
