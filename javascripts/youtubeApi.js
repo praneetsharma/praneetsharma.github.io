@@ -28,7 +28,12 @@ function clearSearchBox()
 
 function fillPopVidBox(response)
 {
- 	 
+ 	$('#popVidBtn').click(function(){
+            $('#overlay').fadeIn(200,function(){
+                $('#box').animate({'top':'50px'},200);
+            });
+            return false;
+        }); 
 }
 
 
