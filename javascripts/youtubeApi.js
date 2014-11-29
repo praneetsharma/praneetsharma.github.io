@@ -27,8 +27,8 @@ function clearSearchBox()
 
 function clearPopVidBox()
 {
-	var parentObj = document.getElementById('searchResultsList');
-	var removeObj = document.getElementById('singleSearchResult');
+	var parentObj = document.getElementById('box');
+	var removeObj = document.getElementById('boxChild');
 	parentObj.removeChild(removeObj);
 	
 	var newChildObj = document.createElement('div');
