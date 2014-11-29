@@ -18,7 +18,7 @@ var loopDivIdtoUrlMap = {};
 
 jQuery(document).ready(function() {
   
-  	$("#leftDiv").animate({
+  	/*$("#leftDiv").animate({
             'marginLeft' : "-=300px"
           });
   
@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
                  display: 'block'
              });
          });
-    });
+    });*/
   
 });
 
