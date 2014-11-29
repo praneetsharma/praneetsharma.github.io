@@ -26,15 +26,15 @@ jQuery(document).ready(function() {
       
        },
 
- 	function () {
-     $('#leftDiv').animate({
-         left: '0',
-         background: '#ccc'
-     }, 100, function () {
-         $('#leftDiv').css({
-             display: 'block'
-         });
-     });
+      function () {
+       $('#leftDiv').animate({
+           left: '0',
+           background: '#ccc'
+       }, 100, function () {
+           $('#leftDiv').css({
+               display: 'block'
+           });
+       });
     });
   
 });
