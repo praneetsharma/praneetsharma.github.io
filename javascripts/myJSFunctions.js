@@ -20,9 +20,7 @@ jQuery(document).ready(function() {
   
   	$("#leftDiv").hover(function () {
         $("#leftDiv").animate({
-            opacity: "1"
-        }, {
-            queue: false
+            left: '100px'
         });
     });
   
