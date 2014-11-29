@@ -178,6 +178,24 @@ function handleAPILoaded() {
 	$('#search-button').attr('disabled', false);
 }
 
+function searchPopular() {
+    // Use the JavaScript client library to create a search.list() API call.
+    var request = gapi.client.youtube.search.list({
+        part: 'snippet'
+    });
+    
+    // Send the request to the API server,
+    // and invoke onSearchRepsonse() with the response.
+    //request.execute(onSearchResponse);
+	request.execute(function(response){
+		var str = JSON.stringify(response.result);
+		youtubeResponse = str;
+		parseSearchResponse(str);
+	});
+	
+}
+
+
 function search(queryTxt) {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
