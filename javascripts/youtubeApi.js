@@ -32,7 +32,7 @@ function clearPopVidBox()
 	parentObj.removeChild(removeObj);
 	
 	var newChildObj = document.createElement('div');
-	newChildObj.id = 'box';
+	newChildObj.id = 'boxChild';
 	parentObj.appendChild(newChildObj);
 }
 
