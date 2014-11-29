@@ -98,7 +98,7 @@
 
 #loopMain{
 	overflow-y: hidden;
-	height: 100%;
+	height: $( document ).height();
 }
 
 #loopMain:hover{
