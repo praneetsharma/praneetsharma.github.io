@@ -16,7 +16,7 @@ var searchResultsResponse = "";
 var loopDivIdtoUrlMap = {};
 
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
   
   	$("#leftDiv").hover(function () {
         $("#leftDiv").animate({
