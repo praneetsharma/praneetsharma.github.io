@@ -28,8 +28,7 @@ jQuery(document).ready(function() {
   
         function () {
          $('#leftDiv').animate({
-             left: '0',
-             background: '#ccc'
+             'marginLeft' : "+=30px"
          }, 100, function () {
              $('#leftDiv').css({
                  display: 'block'
