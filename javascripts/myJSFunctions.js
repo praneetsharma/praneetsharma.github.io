@@ -43,7 +43,10 @@ jQuery(document).ready(function() {
   	$(function() {
        
         $('#boxclose').click(function(){
-          	clearPopVidBox();
+          	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
+			clearPopVidBox();
+		});
+          	
             $('#box').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
