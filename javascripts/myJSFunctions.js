@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
          left: '0',
          background: '#ccc'
      }, 100, function () {
-         $('.ul_div ul').css({
+         $('#leftDiv').css({
              display: 'none'
          });
      });
