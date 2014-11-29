@@ -292,7 +292,7 @@ function searchPopular() {
 
 function searchTrending(){
   	
-  	
+  	var xmlhttp = new XMLHttpRequest();
  	 
 }
 
