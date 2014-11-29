@@ -90,7 +90,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	metaDiv.class = 'uploaderMeta';
 	metaDiv.innerHTML = uploaderInfo;
   	videoInfoDiv.appendChild(metaDiv);
-	field.appendChild(metaDiv);
+	/*field.appendChild(metaDiv);*/
 	var descrDiv = document.createElement('div');
 	descrDiv.class = 'videoDescr';
 	descrDiv.id = 'videoDescr';
