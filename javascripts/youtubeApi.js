@@ -161,8 +161,6 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function fillsearchVidBoxPop(response, isPrevReq)
 {
-  	alert(isPrevReq);
-  
   	
   	$('#soverlay').fadeIn(200,function(){
       	$('#sbox').animate({'top':'50px'},200);
