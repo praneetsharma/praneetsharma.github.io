@@ -34,6 +34,9 @@ function clearPopVidBox()
 	var newChildObj = document.createElement('div');
 	newChildObj.id = 'boxChild';
 	parentObj.appendChild(newChildObj);
+  	
+  	
+  
 }
 
 function fillPopVidBox(response)
