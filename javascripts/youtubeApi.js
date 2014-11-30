@@ -43,7 +43,7 @@ function fillPopVidBox(response)
       	$('#box').animate({'top':'50px'},200);
     });
     
-  	document.getElementById('boxChild')
+  	document.getElementById('boxChild').style.height = '500px';
   
   
   	obj = JSON.parse(response);
