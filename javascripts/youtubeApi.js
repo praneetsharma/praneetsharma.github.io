@@ -406,6 +406,7 @@ function brightScreen()
   	document.getElementById('brightScreenBtn').style.display = 'none'; 
   	document.getElementById('opaqueScreen').style.display = 'none';
   	document.getElementById('urDiv').style.zIndex = 0;
+  	document.getElementById('opaqueScreen').style.zIndex = 0;
 }
 
 
