@@ -59,7 +59,7 @@ function fillPopVidBox(response)
   
   	if(isPopVidBoxOpen == 1)
     {
-     	 clearPopVidBox;
+     	clearPopVidBox();
       	isPopVidBoxOpen = 0;
     }
   
