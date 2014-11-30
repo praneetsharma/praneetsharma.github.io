@@ -266,7 +266,10 @@ function parseSearchResponse(response)
 	
 	obj = JSON.parse(response);
 	var i;
-	
+
+  	nextPageToken = obj.nextPageToken;
+  	totalResults = obj.totalResults;
+  
 	for(i=0;i<10;i++)
 	{
 		var title = obj.items[i].snippet.title;
