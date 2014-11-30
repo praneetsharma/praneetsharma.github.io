@@ -13,6 +13,7 @@ var nextPageToken = '';
 var prevPageToken = '';
 var totalResults = 0;
 var pageNum = 0;
+var query = '';
 
 function setPlayer(player)
 {
