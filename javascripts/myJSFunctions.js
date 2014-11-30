@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
 		});
           	
             $('#sbox').animate({'top':'-200px'},500,function(){
-                $('#overlay').fadeOut('fast');
+                $('#soverlay').fadeOut('fast');
             });
         });
     });
