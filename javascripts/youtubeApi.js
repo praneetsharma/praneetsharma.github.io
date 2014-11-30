@@ -318,6 +318,8 @@ function parseUrlSearchResponse(response)
 	videoInfoDiv.style.display = 'inline-block';
   	videoInfoDiv.style.verticalAlign = 'top';
   	videoInfoDiv.style.paddingLeft = '12px';
+  	videoInfoDiv.style.paddingTop = '12px';
+
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
