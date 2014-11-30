@@ -636,7 +636,7 @@ function searchResponseNext(queryTxt) {
 }
 
 
-function searchUrl(queryText) {
+function searchUrl() {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
