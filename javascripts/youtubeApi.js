@@ -155,7 +155,7 @@ function fillsearchVidBoxPop(response)
 }
 
 
-function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
+function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
   	localUrl = url;
   
