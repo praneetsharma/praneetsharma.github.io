@@ -389,6 +389,16 @@ function fillImpPlaylistBox()
  	 
 }
 
+
+
+function dimScreen()
+{
+ 	 
+}
+
+
+
+
 /*function onYouTubeIframeAPIReady() {
 
 	// Load the IFrame Player API code asynchronously.
