@@ -382,9 +382,6 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-
-
-
 function fillImportPlaylistBox()
 {
   
