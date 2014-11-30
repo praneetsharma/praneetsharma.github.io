@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
       	
       	$('#sboxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
-			clearPopVidBox();
+			clearSearchVidBoxPop();
 		});
           	
             $('#sbox').animate({'top':'-200px'},500,function(){
