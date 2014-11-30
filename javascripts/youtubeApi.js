@@ -404,6 +404,7 @@ function brightScreen()
 {
  	document.getElementById('dimScreenBtn').style.display = 'block'; 	
   	document.getElementById('brightScreenBtn').style.display = 'none'; 
+  	document.getElementById('opaqueScreen').style.display = 'none';
 }
 
 
