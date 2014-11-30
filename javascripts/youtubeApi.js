@@ -25,6 +25,20 @@ function clearSearchBox()
 	parentObj.appendChild(newChildObj);
 }
 
+function clearSearchVidBoxPop()
+{
+	var parentObj = document.getElementById('box');
+	var removeObj = document.getElementById('boxChild');
+	parentObj.removeChild(removeObj);
+	
+	var newChildObj = document.createElement('div');
+	newChildObj.id = 'boxChild';
+	parentObj.appendChild(newChildObj);
+  	
+  	document.getElementById('box').style.height = '30px';
+  
+}
+
 function clearPopVidBox()
 {
 	var parentObj = document.getElementById('box');
