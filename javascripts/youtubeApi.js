@@ -174,6 +174,7 @@ function addPopVideoToPlaylist(imgSrc, title)
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
   
+  	//adding title
   	var videoInfoDiv = document.createElement('div');
 	videoInfoDiv.style.display = 'inline-block';
   	videoInfoDiv.style.verticalAlign = 'top';
