@@ -27,15 +27,15 @@ function clearSearchBox()
 
 function clearSearchVidBoxPop()
 {
-	var parentObj = document.getElementById('box');
-	var removeObj = document.getElementById('boxChild');
+	var parentObj = document.getElementById('sbox');
+	var removeObj = document.getElementById('sboxChild');
 	parentObj.removeChild(removeObj);
 	
 	var newChildObj = document.createElement('div');
-	newChildObj.id = 'boxChild';
+	newChildObj.id = 'sboxChild';
 	parentObj.appendChild(newChildObj);
   	
-  	document.getElementById('box').style.height = '30px';
+  	document.getElementById('sbox').style.height = '30px';
   
   	document.getElementById('box').style.display = 'none';
   
