@@ -342,7 +342,7 @@ function addLoopDiv()
 	loopCounter.value = "1";
 	field.appendChild(loopCounter);	
 	
-	//field.appendChild(document.createTextNode(", skip this: "));
+	field.appendChild(document.createTextNode(", skip this: "));
 	
 	var uncheckVideo = document.createElement("input");
 	uncheckVideo.type="checkbox";
