@@ -161,7 +161,10 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	parentObj.appendChild(field);
 }
 
-addPopVideoToPlaylist
+function addPopVideoToPlaylist(imgSrc, title)
+{
+  
+}
 
 
 function fillsearchVidBoxPop(response, isPrevReq)
