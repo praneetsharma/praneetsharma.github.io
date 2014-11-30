@@ -7,6 +7,7 @@ var youtubeResponse = "";
 var searchId = 0;
 var glbPlayer;
 
+var isPopVidBoxOpen = 0;
 
 function setPlayer(player)
 {
@@ -56,6 +57,11 @@ function clearPopVidBox()
 function fillPopVidBox(response)
 {
   
+  	if(isPopVidBoxOpen == 1)
+    {
+     	 
+    }
+  
   	$('#overlay').fadeIn(200,function(){
       	$('#box').animate({'top':'50px'},200);
     });
@@ -75,6 +81,8 @@ function fillPopVidBox(response)
 		var uploaderInfo = obj.items[i].snippet.channelTitle;
       	fillSinglePopVid(url, thumbnail, title, uploaderInfo, videoDescr, i);
 	}
+  
+  	isPopVidBox = 1;
   
 }
 
