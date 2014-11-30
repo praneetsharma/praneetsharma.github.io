@@ -247,7 +247,7 @@ function addFirstLoopDiv()
 	
 	var txt2 = document.createTextNode(", Loop Count: ");
 	txt2.id = 'txt2-' + loopDivCount;
-	field.appendChild(txt2);
+	//field.appendChild(txt2);
 	
 	
 	var loopCounter = document.createElement("input");
@@ -259,7 +259,7 @@ function addFirstLoopDiv()
 	loopCounter.value = "1";
 	field.appendChild(loopCounter);	
 	
-	field.appendChild(document.createTextNode(", skip this: "));
+	//field.appendChild(document.createTextNode(", skip this: "));
 	
 	var uncheckVideo = document.createElement("input");
 	uncheckVideo.type="checkbox";
