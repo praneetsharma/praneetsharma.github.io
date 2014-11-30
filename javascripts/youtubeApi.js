@@ -431,6 +431,7 @@ function search(queryTxt) {
 	request.execute(function(response){
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
+      	fillsearchVidBoxPop(str);
 		parseSearchResponse(str);
 	});
 	
