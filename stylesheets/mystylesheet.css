@@ -208,7 +208,6 @@ thumbnail, videoInfo{
     -moz-box-shadow: 0 1px 5px #333;
     -webkit-box-shadow: 0 1px 5px #333;
     z-index:101;
-  	width: 900px;
 }
 a.boxclose{
     float:right;
