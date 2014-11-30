@@ -35,7 +35,7 @@ function clearPopVidBox()
 	newChildObj.id = 'boxChild';
 	parentObj.appendChild(newChildObj);
   	
-  	
+  	document.getElementById('box').style.height = '30px';
   
 }
 
