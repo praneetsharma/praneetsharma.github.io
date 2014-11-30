@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
        
         $('#boxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
-				clearPopVidBox();
+			  clearPopVidBox();
               isPopVidBoxOpen = 0;
 		});
           	
