@@ -244,6 +244,7 @@ a.boxclose{
 }
 
 #boxChild{
+  	width: 95%
  	overflow-y: scroll;
 }
 
