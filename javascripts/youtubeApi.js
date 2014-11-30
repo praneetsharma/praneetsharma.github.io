@@ -396,7 +396,8 @@ function dimScreen()
   	document.getElementById('urDiv').style.zIndex = 9902;
   	document.getElementById('opaqueScreen').style.display = 'block';
   	document.getElementById('opaqueScreen').style.zIndex = 9901;
-  	document.getElementById('dimScreenBtn').style.display = 'none'; 	 
+  	document.getElementById('dimScreenBtn').style.display = 'none'; 	
+  	document.getElementById('brightScreenBtn').style.display = 'none'; 	
 }
 
 function brightScreen()
