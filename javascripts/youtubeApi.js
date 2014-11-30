@@ -485,7 +485,7 @@ function searchResponsePrevious(queryTxt) {
         part: 'snippet',
       	type: 'video',
       	pageToken: prevPageToken,
-		q: youtubeResponse
+		q: query
     });
     
     // Send the request to the API server,
