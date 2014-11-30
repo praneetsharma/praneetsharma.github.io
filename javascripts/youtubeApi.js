@@ -22,7 +22,7 @@ function setPlayer(player)
 
 function clearSearchBox()
 {
-  	pageNUm = 0;
+  	pageNum = 0;
 	var parentObj = document.getElementById('searchResultsList');
 	var removeObj = document.getElementById('singleSearchResult');
 	parentObj.removeChild(removeObj);
