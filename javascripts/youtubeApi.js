@@ -170,7 +170,7 @@ function addPopVideoToPlaylist(imgSrc, title)
 	//adding thumbnail
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
-	thumbnailDiv.id = 'tnail-'+i;
+	thumbnailDiv.id = 'tnail-'+'10';
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
   
