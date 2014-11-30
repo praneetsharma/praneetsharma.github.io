@@ -272,6 +272,7 @@ function parseSearchResponse(response)
   	if(pageNum > 1)
     {
      	prevPageToken = obj.prevPageToken;
+      	document.getElementById('prevPgSB').style.display = 'block';
     }
   	nextPageToken = obj.nextPageToken;
   	totalResults = obj.totalResults;
