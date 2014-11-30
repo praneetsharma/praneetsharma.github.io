@@ -402,8 +402,8 @@ function dimScreen()
 
 function brightScreen()
 {
- 	document.getElementById('dimScreenBtn').style.display = 'none'; 	
-  	document.getElementById('brightScreenBtn').style.display = 'block'; 
+ 	document.getElementById('dimScreenBtn').style.display = 'block'; 	
+  	document.getElementById('brightScreenBtn').style.display = 'none'; 
 }
 
 
