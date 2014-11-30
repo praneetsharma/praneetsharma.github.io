@@ -399,6 +399,11 @@ function dimScreen()
   	document.getElementById('dimScreenBtn').style.display = 'none'; 	 
 }
 
+function brightScreen()
+{
+ 	 
+}
+
 
 
 
