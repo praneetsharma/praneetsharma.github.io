@@ -23,7 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 html{
- 	height: 100%; 
+ 	min-height: 100%; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  	height: 100%;
+  	min-height: 100%;
 }
 ol, ul {
 	list-style: none;
