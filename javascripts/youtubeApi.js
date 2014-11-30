@@ -172,7 +172,7 @@ function fillsearchVidBoxPop(response, isPrevReq)
   	obj = JSON.parse(response);
 	var i;
   
-  		if(isPrevReq == 1)
+  	if(isPrevReq == 1)
     {
       	pageNum = pageNum - 1;
       	
