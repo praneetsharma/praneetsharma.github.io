@@ -37,7 +37,7 @@ function clearSearchVidBoxPop()
   	
   	document.getElementById('box').style.height = '30px';
   
-  	document.getElementById('box;).style.display = 'none';
+  	document.getElementById('box').style.display = 'none';
   
 }
 
@@ -148,7 +148,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function fillsearchVidBoxPop(response)
 {
   	alert('hello');
-  	document.getElementById('box;).style.display = 'block';
+  	document.getElementById('box').style.display = 'block';
   	$('#soverlay').fadeIn(200,function(){
       	$('#sbox').animate({'top':'50px'},200);
     });
