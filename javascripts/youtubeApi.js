@@ -278,7 +278,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-/*function parseUrlSearchResponse(response)
+function parseUrlSearchResponse(response)
 {
   	obj = JSON.parse(response);
   	var title = obj.items[i].snippet.title;
@@ -286,7 +286,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
     var url = "https://www.youtube.com/watch?v=" + obj.items[i].id.videoId;
     var videoDescr = obj.items[i].snippet.description;
     var uploaderInfo = obj.items[i].snippet.channelTitle;
-}*/
+}
 
 
 
