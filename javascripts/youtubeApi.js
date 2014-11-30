@@ -266,7 +266,8 @@ function parseSearchResponse(response)
 	
 	obj = JSON.parse(response);
 	var i;
-
+	
+  	if(pageNum ==1)
   	nextPageToken = obj.nextPageToken;
   	totalResults = obj.totalResults;
   
