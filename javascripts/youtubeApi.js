@@ -384,7 +384,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function fillLoopMainWithUrlInfo(response)
 {
- 	 
+ 	 obj = JSON.parse(response);
 }
 
 
