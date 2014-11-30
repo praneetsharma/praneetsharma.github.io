@@ -94,7 +94,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
   	videoInfoDiv.style.verticalAlign = 'top';
   	videoInfoDiv.style.width = '70%';
   	videoInfoDiv.style.paddingLeft = '12px';
-	var h3 = document.createElement('h3');
+	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
 	e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
