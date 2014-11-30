@@ -92,6 +92,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	var videoInfoDiv = document.createElement('div');
 	videoInfoDiv.style.display = 'inline-block';
   	videoInfoDiv.style.verticalAlign = 'top';
+  	videoInfoDiv.style.width = '70%';
   	videoInfoDiv.style.paddingLeft = '12px';
 	var h3 = document.createElement('h3');
 	h3.class = 'videoTitle';
