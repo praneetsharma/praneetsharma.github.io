@@ -43,6 +43,9 @@ function fillPopVidBox(response)
       	$('#box').animate({'top':'50px'},200);
     });
     
+  	document.getElementById('boxChild')
+  
+  
   	obj = JSON.parse(response);
 	var i;
 	
