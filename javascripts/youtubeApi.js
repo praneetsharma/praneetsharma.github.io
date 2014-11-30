@@ -316,7 +316,7 @@ function parseUrlSearchResponse(response)
 	//adding title, uploaderInfo, and videoDescr
 	var videoInfoDiv = document.createElement('div');
 	videoInfoDiv.style.display = 'inline-block';
-  	//videoInfoDiv.style.verticalAlign = 'top';
+  	videoInfoDiv.style.verticalAlign = 'top';
   	videoInfoDiv.style.paddingLeft = '12px';
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
