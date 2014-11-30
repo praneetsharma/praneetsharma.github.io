@@ -331,7 +331,6 @@ function parseUrlSearchResponse(response)
   	metaDiv.style.verticalAlign = 'top';
 	metaDiv.innerHTML = uploaderInfo;
   	videoInfoDiv.appendChild(metaDiv);*/
-	/*field.appendChild(metaDiv);*/
 	/*var descrDiv = document.createElement('div');
 	descrDiv.class = 'videoDescr';
 	descrDiv.id = 'videoDescr';
