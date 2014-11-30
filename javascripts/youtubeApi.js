@@ -107,6 +107,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
   	metaDiv.style.verticalAlign = 'top';
 	metaDiv.innerHTML = uploaderInfo;
   	metaDiv.style.fontSize = '12px';
+  	metaDiv.style.fontWeight = 'bold';
   	videoInfoDiv.appendChild(metaDiv);
 	/*field.appendChild(metaDiv);*/
 	var descrDiv = document.createElement('div');
