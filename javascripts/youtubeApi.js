@@ -37,6 +37,8 @@ function clearSearchVidBoxPop()
   	
   	document.getElementById('box').style.height = '30px';
   
+  	document.getElementById('box;).style.display = 'none';
+  
 }
 
 function clearPopVidBox()
