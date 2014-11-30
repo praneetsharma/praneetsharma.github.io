@@ -60,6 +60,7 @@ function fillPopVidBox(response)
   	if(isPopVidBoxOpen == 1)
     {
      	 clearPopVidBox;
+      	isPopVidBoxOpen = 0;
     }
   
   	$('#overlay').fadeIn(200,function(){
