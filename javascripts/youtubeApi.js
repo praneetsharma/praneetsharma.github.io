@@ -307,8 +307,8 @@ function parseUrlSearchResponse(response)
 	e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	var img = document.createElement("img");
 	img.src = imgSrc;
-	img.width = '85';
-	img.height = '64';
+	img.width = '65';
+	img.height = '44';
 	e1.appendChild(img);
 	thumbnailDiv.appendChild(e1);
 	field.appendChild(thumbnailDiv);
