@@ -12,7 +12,7 @@ var isPopVidBoxOpen = 0;
 var nextPageToken = '';
 var prevPageToken = '';
 var totalResults = 0;
-var pageNum = 0;
+var pageNum = -1;
 var query = '';
 
 function setPlayer(player)
