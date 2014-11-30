@@ -295,7 +295,9 @@ a.boxclose{
     right: 0px;
 }
 
-
+#brightScreen {
+ 	display: none; 
+}
 
 
 
