@@ -53,7 +53,14 @@ jQuery(document).ready(function() {
         });
       
       	
-      	/*$('#sboxclose').click(function(){
+      	
+      	
+     
+    });
+  
+  
+  	$(function() {
+      	$('#sboxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			clearSearchVidBoxPop();
 		});
@@ -61,9 +68,7 @@ jQuery(document).ready(function() {
             $('#sbox').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
-        });*/
-      	
-     
+        });
     });
       
   	
