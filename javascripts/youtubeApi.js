@@ -393,6 +393,7 @@ function fillImpPlaylistBox()
 
 function dimScreen()
 {
+  	document.getElementById('urDiv').
  	 
 }
 
