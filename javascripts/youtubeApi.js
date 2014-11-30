@@ -163,7 +163,16 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function addPopVideoToPlaylist(imgSrc, title)
 {
+  	var parentObj = document.getElementById('loopMain2Child');
   
+  	var field = document.createElement('fieldset');
+	
+	//adding thumbnail
+	var thumbnailDiv = document.createElement('div');
+	thumbnailDiv.class="thumbnail";
+	thumbnailDiv.id = 'tnail-'+i;
+	thumbnailDiv.style.display = 'inline-block';
+	var e1 = document.createElement('a');
 }
 
 
