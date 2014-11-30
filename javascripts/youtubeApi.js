@@ -289,7 +289,7 @@ function parseUrlSearchResponse(response)
   	
   
   	
-  	var parentObj = document.getElementById('singleSearchResult');
+  	var parentObj = document.getElementById('loopMain2Child');
 	
 	var field = document.createElement('fieldset');
 	
