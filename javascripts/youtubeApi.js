@@ -380,7 +380,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function fillImpPlaylistBox()
+function fillImportPlaylistBox()
 {
   
   	$('#impPlaylistoverlay').fadeIn(200,function(){
