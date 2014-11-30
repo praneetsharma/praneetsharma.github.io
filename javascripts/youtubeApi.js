@@ -176,7 +176,6 @@ function fillsearchVidBoxPop(response)
   	
   	if(pageNum > 1)
     {
-      	alert(pageNum);
      	prevPageToken = obj.prevPageToken;
       	document.getElementById('prevPgSB').style.display = 'block';
     }
