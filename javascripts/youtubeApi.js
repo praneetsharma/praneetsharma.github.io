@@ -380,6 +380,11 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
+function fillImpPlaylistBox()
+{
+ 	 
+}
+
 /*function onYouTubeIframeAPIReady() {
 
 	// Load the IFrame Player API code asynchronously.
