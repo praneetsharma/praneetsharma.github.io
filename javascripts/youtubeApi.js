@@ -164,7 +164,11 @@ function fillsearchVidBoxPop(response, isPrevReq)
   	if(isPrevReq == 1)
     {
       	pageNum = pageNum - 1;
-  	pageNum = pageNum + 1;
+    }
+  	else
+    {
+  		pageNum = pageNum + 1;
+    }
   	
   	$('#soverlay').fadeIn(200,function(){
       	$('#sbox').animate({'top':'50px'},200);
