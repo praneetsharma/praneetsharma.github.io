@@ -243,7 +243,7 @@ a.boxclose{
     -khtml-border-top-right-radius: 20px;
 }
 
-#boxChild{
+#boxChild, #sboxChild{
   	width: 100%;
  	overflow-y: scroll;
   	overflow-x: hidden;
