@@ -53,12 +53,12 @@ jQuery(document).ready(function() {
         });
       
       	
-      	$('#boxclose').click(function(){
+      	$('#sboxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			clearPopVidBox();
 		});
           	
-            $('#box').animate({'top':'-200px'},500,function(){
+            $('#sbox').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
         });
