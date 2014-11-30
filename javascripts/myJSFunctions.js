@@ -330,7 +330,7 @@ function addLoopDiv()
 	
 	var txt2 = document.createTextNode(", Loop Count: ");
 	txt2.id = 'txt2-' + loopDivCount;
-	field.appendChild(txt2);
+	//field.appendChild(txt2);
 	
 	
 	var loopCounter = document.createElement("input");
