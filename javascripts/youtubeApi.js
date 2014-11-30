@@ -393,7 +393,7 @@ function fillImpPlaylistBox()
 
 function dimScreen()
 {
-  	document.getElementById('urDiv').
+  	document.getElementById('urDiv').style.zIndex = 9901;
  	 
 }
 
