@@ -275,6 +275,7 @@ function parseSearchResponse(response)
       	document.getElementById('prevPgSB').style.display = 'block';
     }
   	nextPageToken = obj.nextPageToken;
+  	document.getElementById('nxtPgSB').style.display = 'block';
   	totalResults = obj.totalResults;
   
 	for(i=0;i<10;i++)
