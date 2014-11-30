@@ -64,6 +64,7 @@ jQuery(document).ready(function() {
       	$('#sboxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			clearSearchVidBoxPop();
+              pageNum = 0;
 		});
           	
             $('#sbox').animate({'top':'-200px'},500,function(){
