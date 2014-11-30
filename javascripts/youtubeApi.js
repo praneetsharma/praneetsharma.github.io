@@ -170,13 +170,13 @@ function fillsearchVidBoxPop(response, isPrevReq)
   		pageNum = pageNum + 1;
       	
       	if(pageNum > 1)
-    {
-     	prevPageToken = obj.prevPageToken;
-      	document.getElementById('prevPgSB').style.display = 'block';
-    }
-  	nextPageToken = obj.nextPageToken;
-  	document.getElementById('nxtPgSB').style.display = 'block';
-  	totalResults = obj.totalResults;
+        {
+            prevPageToken = obj.prevPageToken;
+            document.getElementById('prevPgSB').style.display = 'block';
+        }
+        nextPageToken = obj.nextPageToken;
+        document.getElementById('nxtPgSB').style.display = 'block';
+        totalResults = obj.totalResults;
       	
     }
   	
