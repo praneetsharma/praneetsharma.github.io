@@ -160,6 +160,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function fillsearchVidBoxPop(response)
 {
+  	pageNum = pageNum + 1;
   	
   	$('#soverlay').fadeIn(200,function(){
       	$('#sbox').animate({'top':'50px'},200);
