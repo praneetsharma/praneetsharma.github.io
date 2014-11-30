@@ -383,8 +383,8 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function fillImpPlaylistBox()
 {
   
-  	$('#soverlay').fadeIn(200,function(){
-      	$('#sbox').animate({'top':'50px'},200);
+  	$('#impPlaylistoverlay').fadeIn(200,function(){
+      	$('#impPlaylistbox').animate({'top':'50px'},200);
     });
  	 
 }
