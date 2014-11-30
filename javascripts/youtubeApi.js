@@ -269,14 +269,6 @@ function parseSearchResponse(response)
 	obj = JSON.parse(response);
 	var i;
 	
-  	if(pageNum > 1)
-    {
-     	prevPageToken = obj.prevPageToken;
-      	document.getElementById('prevPgSB').style.display = 'block';
-    }
-  	nextPageToken = obj.nextPageToken;
-  	document.getElementById('nxtPgSB').style.display = 'block';
-  	totalResults = obj.totalResults;
   
 	for(i=0;i<10;i++)
 	{
