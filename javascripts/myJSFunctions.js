@@ -72,14 +72,14 @@ jQuery(document).ready(function() {
   
   
   	$(function() {
-      	$('#sboxclose').click(function(){
+      	$('#impPlaylistboxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
-			  clearSearchVidBoxPop();
-              pageNum = 0;
+			  //clearSearchVidBoxPop();
+              //pageNum = 0;
 		});
           	
-            $('#sbox').animate({'top':'-200px'},500,function(){
-                $('#soverlay').fadeOut('fast');
+            $('#impPlaylistbox').animate({'top':'-200px'},500,function(){
+                $('#impPlaylistoverlay').fadeOut('fast');
             });
         });
     });
