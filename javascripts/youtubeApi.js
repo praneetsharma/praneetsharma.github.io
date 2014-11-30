@@ -162,7 +162,19 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function fillsearchVidBoxPop(response, isPrevReq)
 {
   	alert(isPrevReq);
-  	if(isPrevReq == 1)
+  
+  	
+  	$('#soverlay').fadeIn(200,function(){
+      	$('#sbox').animate({'top':'50px'},200);
+    });
+    
+  	document.getElementById('sbox').style.height = '83%';
+  	document.getElementById('sboxChild').style.height = '90%';
+  
+  	obj = JSON.parse(response);
+	var i;
+  
+  		if(isPrevReq == 1)
     {
       	pageNum = pageNum - 1;
       	
@@ -188,18 +200,6 @@ function fillsearchVidBoxPop(response, isPrevReq)
         totalResults = obj.totalResults;
       	
     }
-  	
-  	$('#soverlay').fadeIn(200,function(){
-      	$('#sbox').animate({'top':'50px'},200);
-    });
-    
-  	document.getElementById('sbox').style.height = '83%';
-  	document.getElementById('sboxChild').style.height = '90%';
-  
-  	obj = JSON.parse(response);
-	var i;
-  
-  	
   	
   
   
