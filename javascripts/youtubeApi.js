@@ -82,7 +82,7 @@ function fillPopVidBox(response)
       	fillSinglePopVid(url, thumbnail, title, uploaderInfo, videoDescr, i);
 	}
   
-  	isPopVidBox = 1;
+  	isPopVidBoxOpem = 1;
   
 }
 
