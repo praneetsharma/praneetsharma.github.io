@@ -326,7 +326,7 @@ function parseUrlSearchResponse(response)
 	h3.appendChild(e2);
   	videoInfoDiv.appendChild(h3);
 	/*field.appendChild(h3);*/
-	var metaDiv = document.createElement('div');
+	/*var metaDiv = document.createElement('div');
 	metaDiv.class = 'uploaderMeta';
   	metaDiv.style.verticalAlign = 'top';
 	metaDiv.innerHTML = uploaderInfo;
@@ -338,7 +338,7 @@ function parseUrlSearchResponse(response)
   	descrDiv.style.verticalAlign = 'top';
 	descrDiv.style.width = '700px';
 	descrDiv.innerHTML = videoDescr;
-  	videoInfoDiv.appendChild(descrDiv);
+  	videoInfoDiv.appendChild(descrDiv);*/
 	/*field.appendChild(descrDiv);*/
   
   	field.appendChild(videoInfoDiv);
