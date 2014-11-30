@@ -452,7 +452,6 @@ function searchTrending(){
   	
   	xmlhttp.open("GET", url1, true);
   	var rsp = JSON.parse(url1);
-  	alert('hi');
  	 
 }
 
