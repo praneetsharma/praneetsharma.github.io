@@ -279,7 +279,9 @@ a.boxclose{
   	line-height: 24px;
 }
 
-
+#prevPgSB, #nxtPgSB{
+ 	display: none; 
+}
 
 
 
