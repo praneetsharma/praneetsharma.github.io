@@ -380,6 +380,15 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
+
+
+function fillLoopMainWithUrlInfo(response)
+{
+ 	 
+}
+
+
+
 function fillImportPlaylistBox()
 {
   
