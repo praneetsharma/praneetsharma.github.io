@@ -249,6 +249,10 @@ a.boxclose{
   	overflow-x: hidden;
 }
 
+#urlBox{
+ 	padding-bottom: 4px; 
+}
+
 #urlInp{
   	padding: 6px;
  	-webkit-border-radius: 15px; //For Safari, etc.
