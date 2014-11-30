@@ -45,6 +45,7 @@ jQuery(document).ready(function() {
         $('#boxclose').click(function(){
           	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
 			clearPopVidBox();
+              isPopVidBoxOpen = 0;
 		});
           	
             $('#box').animate({'top':'-200px'},500,function(){
