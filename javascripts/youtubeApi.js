@@ -197,8 +197,8 @@ function addPopVideoToPlaylist(imgSrc, title)
   	videoInfoDiv.appendChild(h3);
   	field.appendChild(videoInfoDiv);
   
-  	field.style.paddingBottom = '10px';
-	
+  
+  	field.style.paddingBottom = '10px';	
 	
 	parentObj.appendChild(field);
 }
