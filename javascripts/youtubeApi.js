@@ -394,7 +394,7 @@ function fillImpPlaylistBox()
 function dimScreen()
 {
   	document.getElementById('urDiv').style.zIndex = 9901;
-  	
+  	document.getElementById('opaqueScreen').style.display = 'block';
  	 
 }
 
