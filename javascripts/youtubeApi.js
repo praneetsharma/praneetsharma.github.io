@@ -168,6 +168,8 @@ function fillsearchVidBoxPop(response)
   	obj = JSON.parse(response);
 	var i;
 	
+  	nextPageToken = obj.nextPageToken;
+  
 	for(i=0;i<5;i++)
 	{
 		var title = obj.items[i].snippet.title;
