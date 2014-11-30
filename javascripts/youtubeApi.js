@@ -112,7 +112,6 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	descrDiv.class = 'videoDescr';
 	descrDiv.id = 'videoDescr';
   	descrDiv.style.verticalAlign = 'top';
-	descrDiv.style.width = '700px';
 	descrDiv.innerHTML = videoDescr;
   	videoInfoDiv.appendChild(descrDiv);
 	/*field.appendChild(descrDiv);*/
