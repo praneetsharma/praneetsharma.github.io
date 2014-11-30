@@ -51,12 +51,23 @@ jQuery(document).ready(function() {
             $('#box').animate({'top':'-200px'},500,function(){
                 $('#overlay').fadeOut('fast');
             });
-        });
-      
-      	
-      	
+        });     	
       	
      
+    });
+  
+  
+  	$(function() {
+      	$('#sboxclose').click(function(){
+          	$.getScript("http://praneetsharma.github.io/javascripts/youtubeApi.js", function(){
+			  clearSearchVidBoxPop();
+              pageNum = 0;
+		});
+          	
+            $('#sbox').animate({'top':'-200px'},500,function(){
+                $('#soverlay').fadeOut('fast');
+            });
+        });
     });
   
   
