@@ -106,7 +106,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	metaDiv.class = 'uploaderMeta';
   	metaDiv.style.verticalAlign = 'top';
 	metaDiv.innerHTML = uploaderInfo;
-  	metaDiv.style.fontSize = '12px';
+  	metaDiv.style.fontSize = '13px';
   	metaDiv.style.fontWeight = 'bold';
   	metaDiv.style.color = 'black';
   	videoInfoDiv.appendChild(metaDiv);
@@ -116,7 +116,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	descrDiv.id = 'videoDescr';
   	descrDiv.style.verticalAlign = 'top';
 	descrDiv.innerHTML = videoDescr;
-  	descrDiv.style.fontSize = '11px';
+  	descrDiv.style.fontSize = '12px';
   	videoInfoDiv.appendChild(descrDiv);
 	/*field.appendChild(descrDiv);*/
   
