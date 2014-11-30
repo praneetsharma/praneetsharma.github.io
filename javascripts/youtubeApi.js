@@ -290,6 +290,8 @@ function parseUrlSearchResponse(response)
     var videoDescr = obj.items[i].snippet.description;
     var uploaderInfo = obj.items[i].snippet.channelTitle;
   	
+  	alert(uploaderInfo);
+  
   	var localUrl = url;
   	var imgSrc = thumbnail;
   
