@@ -161,6 +161,9 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function fillsearchVidBoxPop(response, isPrevReq)
 {
+  	if(isPrevReq == 1)
+    {
+      	pageNum = pageNum - 1;
   	pageNum = pageNum + 1;
   	
   	$('#soverlay').fadeIn(200,function(){
