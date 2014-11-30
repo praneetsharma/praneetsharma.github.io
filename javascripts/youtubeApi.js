@@ -461,8 +461,6 @@ function searchUrl(queryText) {
 	request.execute(function(response){
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
-		//parseSearchResponse(str);
-	});
 	
 }
 
