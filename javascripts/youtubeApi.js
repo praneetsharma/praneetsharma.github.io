@@ -174,6 +174,19 @@ function addPopVideoToPlaylist(imgSrc, title)
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
   
+  	var videoInfoDiv = document.createElement('div');
+	videoInfoDiv.style.display = 'inline-block';
+  	videoInfoDiv.style.verticalAlign = 'top';
+  	videoInfoDiv.style.width = '70%';
+  	videoInfoDiv.style.paddingLeft = '12px';
+	var h3 = document.createElement('h3a');
+	h3.class = 'videoTitle';
+	var e2 = document.createElement('a');
+	e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
+	e2.innerHTML = title;
+	h3.appendChild(e2);
+  	videoInfoDiv.appendChild(h3);
+  
   	field.style.paddingBottom = '10px';
 	
 	
