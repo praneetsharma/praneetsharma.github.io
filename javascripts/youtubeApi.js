@@ -170,7 +170,7 @@ function fillsearchVidBoxPop(response)
 	var i;
 	
   	nextPageToken = obj.nextPageToken;
-  	
+  	totalResults = obj.totalResults;
   
 	for(i=0;i<5;i++)
 	{
