@@ -400,7 +400,7 @@ function parseSearchResponse(response)
 	var i;
 	
   
-	for(i=0;i<10;i++)
+	for(i=0;i<5;i++)
 	{
 		var title = obj.items[i].snippet.title;
 		var thumbnail = obj.items[i].snippet.thumbnails.medium.url;
