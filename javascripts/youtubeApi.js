@@ -10,7 +10,7 @@ var glbPlayer;
 var isPopVidBoxOpen = 0;
 
 var nextPageToken = '';
-var prevPageTOken = '';
+var prevPageToken = '';
 var totalResults = 0;
 var pageNum = 0;
 
@@ -269,7 +269,10 @@ function parseSearchResponse(response)
 	obj = JSON.parse(response);
 	var i;
 	
-  	if(pageNum ==1)
+  	if(pageNum > 1)
+    {
+     	prev 
+    }
   	nextPageToken = obj.nextPageToken;
   	totalResults = obj.totalResults;
   
