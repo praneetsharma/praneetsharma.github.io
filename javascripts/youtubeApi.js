@@ -161,6 +161,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function fillsearchVidBoxPop(response, isPrevReq)
 {
+  	alert(isPrevReq);
   	if(isPrevReq == 1)
     {
       	pageNum = pageNum - 1;
