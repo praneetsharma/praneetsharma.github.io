@@ -59,7 +59,7 @@ function fillPopVidBox(response)
   
   	if(isPopVidBoxOpen == 1)
     {
-     	 
+     	 clearPopVidBox;
     }
   
   	$('#overlay').fadeIn(200,function(){
@@ -82,7 +82,7 @@ function fillPopVidBox(response)
       	fillSinglePopVid(url, thumbnail, title, uploaderInfo, videoDescr, i);
 	}
   
-  	isPopVidBoxOpem = 1;
+  	isPopVidBoxOpen = 1;
   
 }
 
