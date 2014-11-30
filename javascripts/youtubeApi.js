@@ -173,6 +173,11 @@ function addPopVideoToPlaylist(imgSrc, title)
 	thumbnailDiv.id = 'tnail-'+i;
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
+  
+  	field.style.paddingBottom = '10px';
+	
+	
+	parentObj.appendChild(field);
 }
 
 
