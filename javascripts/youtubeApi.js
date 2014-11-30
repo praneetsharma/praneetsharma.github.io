@@ -176,6 +176,7 @@ function fillsearchVidBoxPop(response)
   	
   	if(pageNum > 1)
     {
+      	alert(pageNum);
      	prevPageToken = obj.prevPageToken;
       	document.getElementById('prevPgSB').style.display = 'block';
     }
@@ -458,7 +459,6 @@ function searchTrending(){
 
 
 function search(queryTxt) {
-  	query = queryTxt;
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
