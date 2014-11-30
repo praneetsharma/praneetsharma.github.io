@@ -195,6 +195,7 @@ function addPopVideoToPlaylist(imgSrc, title)
 	e2.innerHTML = title;
 	h3.appendChild(e2);
   	videoInfoDiv.appendChild(h3);
+  	field.appendChild(videoInfoDiv);
   
   	field.style.paddingBottom = '10px';
 	
