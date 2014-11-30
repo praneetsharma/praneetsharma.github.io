@@ -489,7 +489,7 @@ function search(queryTxt) {
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
       	clearSearchVidBoxPop();
-      	fillsearchVidBoxPop(str);
+      	fillsearchVidBoxPop(str, 0);
 		//parseSearchResponse(str);
 	});
 	
@@ -511,7 +511,7 @@ function searchResponsePrevious(queryTxt) {
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
       	clearSearchVidBoxPop();
-      	fillsearchVidBoxPop(str);
+      	fillsearchVidBoxPop(str, 1);
 		//parseSearchResponse(str);
 	});
 	
@@ -533,7 +533,7 @@ function searchResponseNext(queryTxt) {
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
       	clearSearchVidBoxPop();
-      	fillsearchVidBoxPop(str);
+      	fillsearchVidBoxPop(str, 0);
 		//parseSearchResponse(str);
 	});
 	
