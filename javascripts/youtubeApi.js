@@ -11,6 +11,7 @@ var isPopVidBoxOpen = 0;
 
 var nextPageToken = '';
 var prevPageTOken = '';
+var totalResults = 0;
 
 function setPlayer(player)
 {
