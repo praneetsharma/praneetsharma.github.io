@@ -289,7 +289,7 @@ a.boxclose{
   	position: fixed;
   	background: black;
   	opacity: 0.8;
-  	top:0px;
+  	top: 50px;
     bottom:0px;
     left:0px;
     right:0px;
