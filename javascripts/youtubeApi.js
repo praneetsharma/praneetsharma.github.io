@@ -338,7 +338,6 @@ function parseUrlSearchResponse(response)
 	descrDiv.style.width = '700px';
 	descrDiv.innerHTML = videoDescr;
   	videoInfoDiv.appendChild(descrDiv);*/
-	/*field.appendChild(descrDiv);*/
   
   	field.appendChild(videoInfoDiv);
 	
