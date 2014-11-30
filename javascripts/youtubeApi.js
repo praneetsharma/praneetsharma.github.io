@@ -290,7 +290,8 @@ function parseUrlSearchResponse(response)
     var videoDescr = obj.items[i].snippet.description;
     var uploaderInfo = obj.items[i].snippet.channelTitle;
   	
-  	
+  	var localUrl = url;	
+  
   	var parentObj = document.getElementById('loopMain2Child');
 	
 	var field = document.createElement('fieldset');
