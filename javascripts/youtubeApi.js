@@ -191,7 +191,7 @@ function addPopVideoToPlaylist(imgSrc, title)
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-	e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
+	/*e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	e2.innerHTML = title;
 	h3.appendChild(e2);
   	videoInfoDiv.appendChild(h3);
