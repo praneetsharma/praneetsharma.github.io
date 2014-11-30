@@ -262,6 +262,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function parseSearchResponse(response)
 {
+  	pageNum++;
 	clearSearchBox();
 	
 	obj = JSON.parse(response);
