@@ -286,7 +286,7 @@ a.boxclose{
 
 #opaqueScreen {
  	display: none;
-  	background-color: black;
+  	background: black;
   	opacity: 0.8;
   	top:0px;
     bottom:0px;
