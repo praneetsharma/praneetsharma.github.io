@@ -9,6 +9,9 @@ var glbPlayer;
 
 var isPopVidBoxOpen = 0;
 
+var nextPageToken = '';
+var prevPageTOken = '';
+
 function setPlayer(player)
 {
 	glbPlayer = player;
