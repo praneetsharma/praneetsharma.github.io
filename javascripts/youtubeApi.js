@@ -109,7 +109,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	thumbnailDiv.id = 'tnail-'+i;
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
-	e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
+	//e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	var img = document.createElement("img");
 	img.src = imgSrc;
 	img.width = '185';
