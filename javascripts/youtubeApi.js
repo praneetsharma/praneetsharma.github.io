@@ -47,7 +47,7 @@ function fillPopVidBox(response)
     });
     
   	document.getElementById('box').style.height = '70%';
-  
+  	document.getElementById('boxChild').style.height = '90%';
   
   	obj = JSON.parse(response);
 	var i;
