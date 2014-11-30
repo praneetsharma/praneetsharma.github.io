@@ -271,7 +271,7 @@ function parseSearchResponse(response)
 	
   	if(pageNum > 1)
     {
-     	prev 
+     	prevPageToken = obj.prevPageToken;
     }
   	nextPageToken = obj.nextPageToken;
   	totalResults = obj.totalResults;
