@@ -432,7 +432,7 @@ function search(queryTxt) {
 		var str = JSON.stringify(response.result);
 		youtubeResponse = str;
       	fillsearchVidBoxPop(str);
-		parseSearchResponse(str);
+		//parseSearchResponse(str);
 	});
 	
 }
