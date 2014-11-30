@@ -447,6 +447,28 @@ function search(queryTxt) {
 	
 }
 
+
+function searchUrl(queryText) {
+    // Use the JavaScript client library to create a search.list() API call.
+    var request = gapi.client.youtube.search.list({
+        part: 'snippet',
+		q: queryTxt
+    });
+    
+    // Send the request to the API server,
+    // and invoke onSearchRepsonse() with the response.
+    //request.execute(onSearchResponse);
+	request.execute(function(response){
+		var str = JSON.stringify(response.result);
+		youtubeResponse = str;
+      	clearSearchVidBoxPop();
+      	fillsearchVidBoxPop(str);
+		//parseSearchResponse(str);
+	});
+	
+}
+
+
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     showResponse(response);
