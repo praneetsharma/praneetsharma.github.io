@@ -133,11 +133,11 @@ function fillsearchVidBoxPop(response)
 {
   
   	$('#overlay').fadeIn(200,function(){
-      	$('#box').animate({'top':'50px'},200);
+      	$('#sbox').animate({'top':'50px'},200);
     });
     
-  	document.getElementById('box').style.height = '83%';
-  	document.getElementById('boxChild').style.height = '90%';
+  	document.getElementById('sbox').style.height = '83%';
+  	document.getElementById('sboxChild').style.height = '90%';
   
   	obj = JSON.parse(response);
 	var i;
@@ -159,7 +159,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
   	localUrl = url;
   
- 	var parentObj = document.getElementById('boxChild');
+ 	var parentObj = document.getElementById('sboxChild');
   
   	var field = document.createElement('fieldset');
 	
