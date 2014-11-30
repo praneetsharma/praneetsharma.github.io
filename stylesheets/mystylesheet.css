@@ -249,6 +249,12 @@ a.boxclose{
   	overflow-x: hidden;
 }
 
+#urlINp{
+ 	-webkit-border-radius: 5px; //For Safari, etc.
+    -moz-border-radius: 5px; //For Mozilla, etc.
+    border-radius: 5px; //CSS3 Feature 
+}
+
 
 
 
