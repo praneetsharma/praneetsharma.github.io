@@ -508,6 +508,7 @@ function fillImportPlaylistBox(e)
   	var reader = new FileReader();
   	reader.onload = function(e) {
   		var contents = e.target.result;
+      	displayContents(contents);
     }
   	reader.readAsText(file);
  	
