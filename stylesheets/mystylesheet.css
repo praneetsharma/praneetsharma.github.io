@@ -373,7 +373,6 @@ a.boxclose{
 #popMenu li:hover > ul {
     opacity: 1;
     visibility: visible;
-    margin: 0;
 }
 
 #popMenu ul ul {
