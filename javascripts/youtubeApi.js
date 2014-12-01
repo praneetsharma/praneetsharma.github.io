@@ -509,7 +509,7 @@ function fillImportPlaylistBox(e)
   	reader.onload = function(e) {
   		var contents = e.target.result;
     }
-  
+  	reader.readAsText(file);
  	
 }
 function displayContents(contents) {
