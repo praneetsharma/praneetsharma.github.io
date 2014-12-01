@@ -325,9 +325,7 @@ a.boxclose{
     width: 50px;
     border: 1px solid #222;
     background-color: #111;
-    background-image: linear-gradient(#444, #111);
     border-radius: 2px;
-    box-shadow: 0 1px 1px #777;
 }
 
 #popMenu:before,
@@ -343,7 +341,6 @@ a.boxclose{
 #popMenu li {
     float: left;
     border-right: 1px solid #222;
-    box-shadow: 1px 0 0 #444;
     position: relative;
 }
 
