@@ -496,6 +496,8 @@ function doOpen(evt) {
     reader.onload = function() {
       	obj = JSON.parse(response);
       
+      	alert(obj.video.playlistId);
+      
       	alert(this.result);
         //showout.value = this.result;
     };
