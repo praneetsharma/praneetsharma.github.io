@@ -350,7 +350,6 @@ a.boxclose{
 #popMenu a {
     float: left;
     color: #999;
-    text-shadow: 0 1px 0 #000;
 }
 
 #popMenu li:hover > a {
