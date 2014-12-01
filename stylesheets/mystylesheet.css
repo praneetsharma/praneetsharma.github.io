@@ -350,7 +350,7 @@ a.boxclose{
 
 #popMenu a {
     float: left;
-    padding: 5px 5px;
+    padding: 0px 0px;
     color: #999;
     text-transform: uppercase;
     font: bold 12px Arial, Helvetica;
