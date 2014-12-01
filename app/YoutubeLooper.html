@@ -79,7 +79,11 @@
               		<input type="file" id="openselect" />
 					<textarea id="showresult"></textarea>
               
-              
+              		<script>
+                      var openbtn = document.getElementById("openselect"),
+    showout = document.getElementById("showresult");
+openselect.addEventListener("change", doOpen, false);
+              </script>
               
 			</div>
 			
