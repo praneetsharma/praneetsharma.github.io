@@ -368,7 +368,7 @@ a.boxclose{
     color: #fafafa;
 }
 
-#menu ul {
+#popMenu ul {
     margin: 20px 0 0 0;
     _margin: 0; /*IE6 only*/
     opacity: 0;
@@ -384,7 +384,7 @@ a.boxclose{
     transition: all .2s ease-in-out;
 }
 
-#menu li:hover > ul {
+#popMenu li:hover > ul {
     opacity: 1;
     visibility: visible;
     margin: 0;
