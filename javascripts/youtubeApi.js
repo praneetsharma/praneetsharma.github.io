@@ -516,11 +516,11 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function displayContents(contents) {
   var element = document.getElementById('file-content');
   element.innerHTML = contents;
-}
+}*/
 document.getElementById('file-input')
   .addEventListener('change', readSingleFile, false);
 }
-*/
+
 
 
 function dimScreen()
