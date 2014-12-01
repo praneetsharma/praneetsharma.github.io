@@ -492,12 +492,20 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function fillImportPlaylistBox()
+function fillImportPlaylistBox(e)
 {
   
   	$('#impPlaylistoverlay').fadeIn(200,function(){
       	$('#impPlaylistbox').animate({'top':'50px'},200);
     });
+  
+  
+  	var file = e.target.files[0];
+  	if(!file){
+    	return;
+  	}
+  
+  	
   
  	 
 }
