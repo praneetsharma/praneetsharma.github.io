@@ -522,6 +522,7 @@ function fillImportPlaylistBox(response)
   
   	for(i=0;i<numVideos;i++)
     {
+      	var title = obj.video.title;
      	var imgSrc = obj.video.imgUrl; 	
      	addPopVideoToPlaylist(imgSrc, title);
     }
