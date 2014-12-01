@@ -507,10 +507,16 @@ function fillImportPlaylistBox(e)
   
   	var reader = new FileReader();
   	reader.onload = function(e) {
-  		
+  		var contents = e.target.result;
     }
   
- 	 
+ 	function displayContents(contents) {
+  var element = document.getElementById('file-content');
+  element.innerHTML = contents;
+}
+
+document.getElementById('file-input')
+  .addEventListener('change', readSingleFile, false);
 }
 
 
