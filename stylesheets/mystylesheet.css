@@ -300,5 +300,12 @@ a.boxclose{
 }
 
 
+#loopMain2{
+	overflow-y: hidden;
+	height: 60%;
+}
 
+#loopMain2:hover{
+	overflow-y: auto;
+}
 
