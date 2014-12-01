@@ -361,6 +361,8 @@ a.boxclose{
 }
 
 #popMenu ul {
+    margin: 0 0 0 0;
+    _margin: 0; /*IE6 only*/
     opacity: 0;
     visibility: hidden;
     position: absolute;
