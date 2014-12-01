@@ -500,7 +500,7 @@ function doOpen(evt) {
     reader.readAsText(files[0]);
 }
 
-function fillImportPlaylistBox(e)
+function fillImportPlaylistBox()
 {
   
   	$('#impPlaylistoverlay').fadeIn(200,function(){
