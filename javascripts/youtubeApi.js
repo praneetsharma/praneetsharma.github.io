@@ -506,6 +506,9 @@ function fillImportPlaylistBox(e)
   	}
   
   	var reader = new FileReader();
+  	reader.onload = function(e) {
+  		
+    }
   
  	 
 }
