@@ -489,6 +489,14 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 }
 
 
+function doOpen(evt) {
+  var files = evt.target.files,
+      reader = new FileReader();
+    reader.onload = function() {
+        showout.value = this.result;
+    };
+    reader.readAsText(files[0]);
+}
 
 
 
