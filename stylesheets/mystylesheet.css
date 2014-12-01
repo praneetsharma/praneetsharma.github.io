@@ -409,7 +409,7 @@ a.boxclose{
 }
 
 #popMenu ul a {    
-    padding: 14x;
+    padding: 4px;
     width: 120px;
     _height: 10px; /*IE6 only*/
     display: block;
