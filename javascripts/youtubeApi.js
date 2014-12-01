@@ -492,7 +492,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-/*function fillImportPlaylistBox(e)
+function fillImportPlaylistBox(e)
 {
   
   	$('#impPlaylistoverlay').fadeIn(200,function(){
@@ -516,7 +516,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function displayContents(contents) {
   var element = document.getElementById('file-content');
   element.innerHTML = contents;
-}*/
+}
 /*
 document.getElementById('file-input')
   .addEventListener('change', readSingleFile, false);
