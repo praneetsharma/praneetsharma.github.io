@@ -524,7 +524,6 @@ function fillImportPlaylistBox(response)
   	var i;
   	var numVideos = obj.numVideos;
   
-  	var parentObj = document.getElementById('loopMain2Child');
   
   	for(i=0;i<numVideos;i++)
     {
