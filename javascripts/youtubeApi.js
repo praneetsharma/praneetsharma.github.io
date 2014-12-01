@@ -176,8 +176,8 @@ function addPopVideoToPlaylist(imgSrc, title)
 	var e1 = document.createElement('a');
   	var img = document.createElement("img");
 	img.src = imgSrc;
-	img.width = '185';
-	img.height = '104';
+	img.width = '65';
+	img.height = '44';
 	e1.appendChild(img);
 	thumbnailDiv.appendChild(e1);
 	field.appendChild(thumbnailDiv);
