@@ -318,3 +318,13 @@ a.boxclose{
     padding: 0;
     list-style: none; 
 }
+
+#popMenu {
+    width: 960px;
+    margin: 60px auto;
+    border: 1px solid #222;
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+}
