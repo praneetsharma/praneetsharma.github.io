@@ -517,7 +517,7 @@ function fillImportPlaylistBox(response)
   	obj = JSON.parse(response);
   
   	var i;
-  	var numVideos = obj.numVideos;
+  	var numVideos = 1;
   
   	var parentObj = document.getElementById('loopMain2Child');
   
