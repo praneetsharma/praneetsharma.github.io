@@ -392,13 +392,13 @@ a.boxclose{
     margin: 0;
 }
 
-#popMenu ul ul {
+/*#popMenu ul ul {
     top: 0;
     left: 150px;
     margin: 0 0 0 20px;
     _margin: 0; /*IE6 only*/
     box-shadow: -1px 0 0 rgba(255,255,255,.3);      
-}
+}*/
 
 #popMenu ul li {
     float: none;
