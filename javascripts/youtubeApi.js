@@ -495,9 +495,9 @@ function doOpen(evt) {
     reader = new FileReader();
     reader.onload = function() {
       	
-        obj = JSON.parse(this.result);
+        //obj = JSON.parse(this.result);
         
-        alert(obj.video.title);
+        //alert(obj.video.title);
         fillImportPlaylistBox(this.result);
       
       
