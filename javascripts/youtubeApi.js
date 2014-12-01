@@ -326,7 +326,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function parseUrlSearchResponse(response)
 {
  
-  	document.getElementById('urlInp').value == 'a';
+  	document.getElementById('urlInp').value = '';
   	obj = JSON.parse(response);
   
   	var i =0;
