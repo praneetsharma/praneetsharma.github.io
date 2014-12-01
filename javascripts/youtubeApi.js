@@ -495,11 +495,12 @@ function doOpen(evt) {
     reader = new FileReader();
     reader.onload = function() {
       	
-      fillImportPlaylistBox(this.result);
-      
       obj = JSON.parse(this.result);
       
       alert(obj.video.title);
+      fillImportPlaylistBox(this.result);
+      
+      
       
       	//alert(this.result);
         //showout.value = this.result;
