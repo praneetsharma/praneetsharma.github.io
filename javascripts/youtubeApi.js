@@ -499,7 +499,7 @@ function doOpen(evt) {
       
       obj = JSON.parse(this.result);
       
-      alert(obj.video.playlistId);
+      alert(obj.video.title);
       
       	//alert(this.result);
         //showout.value = this.result;
