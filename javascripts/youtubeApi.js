@@ -522,7 +522,7 @@ function fillImportPlaylistBox(response)
   
   	for(i=0;i<numVideos;i++)
     {
-      	
+     	 	
      	addPopVideoToPlaylist(imgSrc, title);
     }
   	
