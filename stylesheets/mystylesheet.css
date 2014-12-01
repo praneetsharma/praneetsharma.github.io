@@ -75,7 +75,8 @@
 	left: 33%;
 	float: left;*/
 	float: right;
-	width: 50%
+	width: 50%;
+  	position: fixed;
 	
 }
 
