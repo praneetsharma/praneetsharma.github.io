@@ -505,7 +505,7 @@ function fillImportPlaylistBox(e)
     	return;
   	}
   
-  	
+  	var reader = new FileReader();
   
  	 
 }
