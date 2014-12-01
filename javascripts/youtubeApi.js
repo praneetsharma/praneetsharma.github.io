@@ -492,7 +492,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function fillImportPlaylistBox(e)
+/*function fillImportPlaylistBox(e)
 {
   
   	$('#impPlaylistoverlay').fadeIn(200,function(){
@@ -520,7 +520,7 @@ function displayContents(contents) {
 document.getElementById('file-input')
   .addEventListener('change', readSingleFile, false);
 }
-
+*/
 
 
 function dimScreen()
