@@ -498,6 +498,7 @@ function doOpen(evt) {
     };
     reader.readAsText(files[0]);
 }
+
 function fillImportPlaylistBox(e)
 {
   
