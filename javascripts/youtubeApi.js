@@ -508,6 +508,11 @@ function doOpen(evt) {
     reader.readAsText(files[0]);
 }
 
+function openImportPlaylistBox()
+{
+  
+}
+
 function fillImportPlaylistBox(response)
 {  
   	$('#impPlaylistoverlay').fadeIn(200,function(){
