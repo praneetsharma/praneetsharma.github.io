@@ -517,6 +517,11 @@ function fillImportPlaylistBox(response)
   
   	var i;
   	var numVideos = obj.numVideos;
+  
+  	for(i=0;i<numVideos;i++)
+    {
+     	 
+    }
   	
   
 }
