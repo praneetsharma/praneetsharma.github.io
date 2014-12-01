@@ -494,10 +494,12 @@ function doOpen(evt) {
   	var files = evt.target.files,
     reader = new FileReader();
     reader.onload = function() {
-      	fillImportPlaylistBox(this.result);
-      	obj = JSON.parse(this.result);
+      	
+      fillImportPlaylistBox(this.result);
       
-      	alert(obj.video.playlistId);
+      //obj = JSON.parse(this.result);
+      
+      	//alert(obj.video.playlistId);
       
       	//alert(this.result);
         //showout.value = this.result;
