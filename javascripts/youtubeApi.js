@@ -492,35 +492,18 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 
 
-function fillImportPlaylistBox(e)
-{
-  
-  	$('#impPlaylistoverlay').fadeIn(200,function(){
-      	$('#impPlaylistbox').animate({'top':'50px'},200);
-    });
-  
-  
-  	var file = e.target.files[0];
-  	if(!file){
-    	return;
-  	}
-  
-  	var reader = new FileReader();
-  	reader.onload = function(e) {
-  		var contents = e.target.result;
-      	displayContents(contents);
-    }
-  	reader.readAsText(file);
- 	
+function doOpen(evt) {
+  var files = evt.target.files,
+      reader = new FileReader();
+    reader.onload = function() {
+        showout.value = this.result;
+    };
+    reader.readAsText(files[0]);
 }
-function displayContents(contents) {
-  var element = document.getElementById('file-content');
-  element.innerHTML = contents;
-}
-/*
-document.getElementById('file-input')
-  .addEventListener('change', readSingleFile, false);
-}*/
+    
+var openbtn = document.getElementById("openselect"),
+    showout = document.getElementById("showresult");
+openselect.addEventListener("change", doOpen, false);
 
 
 
