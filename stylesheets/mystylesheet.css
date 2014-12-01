@@ -94,6 +94,7 @@
 }
 
 #leftDiv{
+  	top: 0px;
 	padding-top: 60px;
 	padding-left: 20px;
 	float: left;
