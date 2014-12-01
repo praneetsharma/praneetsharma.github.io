@@ -498,7 +498,7 @@ function doOpen(evt) {
       
       	alert(obj.video.playlistId);
       
-      	alert(this.result);
+      	//alert(this.result);
         //showout.value = this.result;
     };
     reader.readAsText(files[0]);
