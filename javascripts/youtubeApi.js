@@ -498,7 +498,7 @@ function doOpen(evt) {
         obj = JSON.parse(this.result);
         
         alert(obj.video.title);
-        fillImportPlaylistBox(this.result);
+        //fillImportPlaylistBox(this.result);
       
       
       
