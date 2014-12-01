@@ -393,9 +393,7 @@ function parseUrlSearchResponse(response)
   	field.style.paddingBottom = '10px';
 	
 	
-	parentObj.appendChild(field);
-  
-  
+	parentObj.appendChild(field); 
   
   
 }
