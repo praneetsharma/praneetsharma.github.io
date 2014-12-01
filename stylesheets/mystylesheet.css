@@ -343,7 +343,7 @@ a.boxclose{
     zoom:1;
 }
 
-#popMenu li {
+#popMenu ul {
     float: left;
     border-right: 1px solid #222;
     box-shadow: 1px 0 0 #444;
@@ -360,10 +360,10 @@ a.boxclose{
     text-shadow: 0 1px 0 #000;
 }
 
-#popMenu li:hover > a {
+#popMenu ul:hover > a {
     color: #fafafa;
 }
 
-*html #popMenu li a:hover { /* IE6 only */
+*html #popMenu ul a:hover { /* IE6 only */
     color: #fafafa;
 }
