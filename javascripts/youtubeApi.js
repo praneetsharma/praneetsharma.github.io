@@ -489,6 +489,7 @@ function oneSearchResult(url, imgSrc, title, uploaderInfo, videoDescr, i)
 }
 
 
+
 function doOpen(evt) {
   var files = evt.target.files,
       reader = new FileReader();
