@@ -501,9 +501,7 @@ function doOpen(evt) {
     reader.readAsText(files[0]);
 }
     
-var openbtn = document.getElementById("openselect"),
-    showout = document.getElementById("showresult");
-openselect.addEventListener("change", doOpen, false);
+
 
 
 
