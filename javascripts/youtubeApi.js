@@ -504,7 +504,7 @@ function doOpen(evt) {
     reader.readAsText(files[0]);
 }
 
-function fillImportPlaylistBox()
+function fillImportPlaylistBox(response)
 {  
   	$('#impPlaylistoverlay').fadeIn(200,function(){
       	$('#impPlaylistbox').animate({'top':'50px'},200);
