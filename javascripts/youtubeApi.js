@@ -494,7 +494,8 @@ function doOpen(evt) {
   	var files = evt.target.files,
     reader = new FileReader();
     reader.onload = function() {
-        showout.value = this.result;
+      	alert(this.result);
+        //showout.value = this.result;
     };
     reader.readAsText(files[0]);
 }
