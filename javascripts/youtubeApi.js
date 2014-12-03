@@ -180,6 +180,7 @@ function addPopVideoToPlaylist(url, imgSrc, title)
   	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
   
+  	document.getElementById('dimScreenBtn')
   
   	var parentObj = document.getElementById('loopMain2Child');
   
