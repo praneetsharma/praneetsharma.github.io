@@ -167,6 +167,9 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function addPopVideoToPlaylist(imgSrc, title)
 {
+  
+  	urlsInPlaylist.push(vidId);
+  
   	var parentObj = document.getElementById('loopMain2Child');
   
   	var field = document.createElement('fieldset');
