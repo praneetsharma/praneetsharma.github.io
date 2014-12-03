@@ -790,6 +790,10 @@ function onPlayerStateChange(event)
     	//playVideosInPlaylist();
     	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
     	curPlayingVidId++;
+    	if(curPlayingVidId == vidsInPlaylist.length)
+        {
+         	 
+        }
   }
   
   if(event.data == YT.PlayerState.PAUSED)
