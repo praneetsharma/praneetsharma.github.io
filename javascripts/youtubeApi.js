@@ -769,11 +769,11 @@ function onSearchResponse(response) {
 function playVideosInPlaylist()
 {
  	//vidsInPlaylist 
-  	var i;
+  	/*var i;
   	for(i=0;i<vidsInPlaylist.length;i++)
     {
      	 loadNextVid(vidsInPlaylist[i], 0, 9, 'large');
-    }
+    }*/
 }
 
 
