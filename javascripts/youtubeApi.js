@@ -788,7 +788,7 @@ function onPlayerStateChange(event)
   {
     	//loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
     	//playVideosInPlaylist();
-    	loadNextVid(vidsInPlaylist[curPlayingVidId)
+    	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
   }
   
   if(event.data == YT.PlayerState.PAUSED)
