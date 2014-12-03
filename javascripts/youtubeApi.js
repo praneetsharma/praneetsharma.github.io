@@ -19,7 +19,7 @@ var query = '';
 var vidsInPlaylist = [];
 
 
-int curPlayingVidId = 0;
+var curPlayingVidId = 0;
 
 
 function setPlayer(player)
