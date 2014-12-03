@@ -23,6 +23,10 @@ function setPlayer(player)
 	glbPlayer = player;
 }
 
+function getIdFromUrl(url)
+{
+	  	
+}
 
 function clearSearchBox()
 {
