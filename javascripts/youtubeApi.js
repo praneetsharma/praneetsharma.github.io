@@ -810,7 +810,16 @@ function playNextVidInPlaylist()
       curPlayingVidId = 0; 
     }
 }
-                  
+ 
+function loadNextVid(vidId, startSec, endSec, vidQual)
+{
+    url = "https://www.youtube.com/v/"+vidId+"?version=3&hl=en&fs=1&enablejsapi=1";
+   // player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec, 'suggestedQuality': vidQual});
+  	player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec});
+    //player.loadVideoByUrl(url, 0);
+    player.playVideo();
+}
+
                   
 function loadNextVid(vidId, startSec, endSec, vidQual)
 {
