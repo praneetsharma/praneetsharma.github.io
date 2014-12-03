@@ -801,6 +801,7 @@ function onPlayerStateChange(event)
 
 function playNextVidInPlaylist()
 {
+  	alert(vidsInPlaylist);
   	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
     curPlayingVidId++;
     if(curPlayingVidId == vidsInPlaylist.length)
