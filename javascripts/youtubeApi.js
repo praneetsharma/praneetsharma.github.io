@@ -807,10 +807,7 @@ function playNextVidInPlaylist()
   	//loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
   	loadNextVid(vidsInPlaylist[curPlayingVidId]);
     curPlayingVidId++;
-    if(curPlayingVidId == vidsInPlaylist.length)
-    {
-      curPlayingVidId = 0; 
-    }
+    
 }
  
 function loadNextVid(vidId)
