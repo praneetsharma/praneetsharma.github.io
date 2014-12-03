@@ -803,7 +803,11 @@ function onPlayerStateChange(event)
   
 }
 
-					                  
+
+function playNextVidInPlaylist()
+{
+  
+}
                   
                   
 function loadNextVid(vidId, startSec, endSec, vidQual)
