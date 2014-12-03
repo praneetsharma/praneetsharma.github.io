@@ -791,6 +791,10 @@ function onPlayerStateChange(event)
   
   if(event.data == YT.PlayerState.ENDED)
   {
+    	if(curPlayingVidId == vidsInPlaylist.length)
+        {
+          curPlayingVidId = 0; 
+        }
     	playNextVidInPlaylist();
   }
   
