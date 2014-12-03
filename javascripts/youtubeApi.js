@@ -777,7 +777,7 @@ function onPlayerStateChange(event)
 function loadNextVid(vidUrl, startSec, endSec, vidQual)
 {
     url = "https://www.youtube.com/v/"+vidUrl+"?version=3&hl=en&fs=1&enablejsapi=1";
-    player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec, 'suggestedQuality': vidQual});
+   // player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec, 'suggestedQuality': vidQual});
   	player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec, 'suggestedQuality': vidQual});
     //player.loadVideoByUrl(url, 0);
     player.playVideo();
