@@ -783,5 +783,8 @@ function loadNextVid(vidUrl, startSec, endSec, vidQual)
 }
 
 
-
+function pauseCurVid()
+{
+ 	 
+}
 
