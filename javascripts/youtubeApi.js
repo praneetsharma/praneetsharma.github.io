@@ -784,7 +784,6 @@ function playVideosInPlaylist()
 
 
 
-
 function onPlayerStateChange(event) 
 {
   
