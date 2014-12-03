@@ -118,7 +118,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
 	
-  	e1.href = "javascript:addPopVideoToPlaylist('" url + "'" + "," + imgSrc + "'" + "," + "'" + title + "')";
+  	e1.href = "javascript:addPopVideoToPlaylist('" url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
   	/*e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	
   	var img = document.createElement("img");
