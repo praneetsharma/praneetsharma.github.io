@@ -259,7 +259,11 @@
 					player = new YT.Player('ytplayer', {
 					  height: '390',
 					  width: '640',
-					  videoId: 'DdTLXQNOA2s'
+					  videoId: 'DdTLXQNOA2s',
+                      events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
 					});
 					setPlayer(player);
 				  } 
