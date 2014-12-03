@@ -25,7 +25,8 @@ function setPlayer(player)
 
 function getIdFromUrl(url)
 {
-	splitUrl = url.split("=");  	
+	splitUrl = url.split("=");
+  	return splitUrl;
 }
 
 function clearSearchBox()
