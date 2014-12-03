@@ -761,12 +761,12 @@ function onPlayerStateChange(event)
   
   if(event.data == YT.PlayerState.ENDED)
   {
-    loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
+    	loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
   }
   
   if(event.data == YT.PlayerState.PAUSED)
   {
-    
+    	//
   }                  
   
 }
