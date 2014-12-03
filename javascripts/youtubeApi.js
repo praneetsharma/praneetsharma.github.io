@@ -788,3 +788,7 @@ function pauseCurVid()
  	player.pauseVideo(); 
 }
 
+function playCurVid()
+{
+ 	player.playVideo(); 
+}
