@@ -792,3 +792,8 @@ function playCurVid()
 {
  	player.playVideo(); 
 }
+
+function stopCurVid()
+{
+  	player.stopVideo();
+}
