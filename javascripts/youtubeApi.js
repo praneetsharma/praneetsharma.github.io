@@ -172,7 +172,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function addPopVideoToPlaylist(imgSrc, title)
 {
-  
+  	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
   
   	var parentObj = document.getElementById('loopMain2Child');
