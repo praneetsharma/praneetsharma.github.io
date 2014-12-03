@@ -764,7 +764,7 @@ function onSearchResponse(response) {
 
 function playVideosInPlaylist()
 {
-  
+ 	vidsInPlaylist 
 }
 
 
