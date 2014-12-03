@@ -771,6 +771,7 @@ function onSearchResponse(response) {
 function playVideosInPlaylist()
 {
   	player.playVideo();
+  	alert(vidsInPlaylist);
  	//vidsInPlaylist 
   	/*var i;
   	for(i=0;i<vidsInPlaylist.length;i++)
