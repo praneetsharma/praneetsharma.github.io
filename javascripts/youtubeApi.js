@@ -18,6 +18,9 @@ var query = '';
 
 var vidsInPlaylist = [];
 
+
+int curVidId = 0;
+
 function setPlayer(player)
 {
 	glbPlayer = player;
