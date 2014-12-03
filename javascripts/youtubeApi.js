@@ -124,8 +124,8 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
 	
-  	e1.href = "javascript:addPopVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
-  	//e1.href = "javascript:addPopVideoToPlaylist('" + imgSrc + "'" + "," + "'" + title + "')";
+  	e1.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	//e1.href = "javascript:addVideoToPlaylist('" + imgSrc + "'" + "," + "'" + title + "')";
   	/*e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	
   	var img = document.createElement("img");
@@ -145,7 +145,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-  	e2.href = "javascript:addPopVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	e2.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
 	/*e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	e2.innerHTML = title;
 	h3.appendChild(e2);
@@ -177,7 +177,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	parentObj.appendChild(field);
 }
 
-function addPopVideoToPlaylist(url, imgSrc, title)
+function addVideoToPlaylist(url, imgSrc, title)
 {
   	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
@@ -547,7 +547,7 @@ function fillImportPlaylistBox(response)
     {
       	var title = obj.videos[i].title;
      	var imgSrc = obj.videos[i].imgUrl; 	
-     	addPopVideoToPlaylist('h', imgSrc, title);
+     	addVideoToPlaylist('h', imgSrc, title);
     }
   	
   
