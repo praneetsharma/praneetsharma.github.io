@@ -788,12 +788,7 @@ function onPlayerStateChange(event)
   {
     	//loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
     	//playVideosInPlaylist();
-    	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
-    	curPlayingVidId++;
-    	if(curPlayingVidId == vidsInPlaylist.length)
-        {
-         	curPlayingVidId = 0; 
-        }
+    	
   }
   
   if(event.data == YT.PlayerState.PAUSED)
@@ -806,7 +801,12 @@ function onPlayerStateChange(event)
 
 function playNextVidInPlaylist()
 {
-  
+  	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
+    	curPlayingVidId++;
+    	if(curPlayingVidId == vidsInPlaylist.length)
+        {
+         	curPlayingVidId = 0; 
+        }
 }
                   
                   
