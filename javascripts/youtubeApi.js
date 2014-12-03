@@ -16,10 +16,12 @@ var pageNum = 0;
 var query = '';
 
 
+/*
+ALL VARIABLES RELATED TO YOUTUBE PLAYER WILL GO TO html page inside <script>
+*/
 
 
 
-var curPlayingVidId = 0;
 
 
 function setPlayer(player)
