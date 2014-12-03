@@ -788,7 +788,6 @@ function onPlayerStateChange(event)
   {
     	//loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
     	//playVideosInPlaylist();
-    	alert(curPlayingVidId);
     	loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
     	curPlayingVidId++;
     	if(curPlayingVidId == vidsInPlaylist.length)
