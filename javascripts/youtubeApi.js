@@ -766,7 +766,7 @@ function onPlayerStateChange(event)
   
   if(event.data == YT.PlayerState.PAUSED)
   {
-    	//
+    	//add TIP OR ADVERTISEMENT
   }                  
   
 }
