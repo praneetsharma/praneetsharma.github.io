@@ -15,6 +15,9 @@ var totalResults = 0;
 var pageNum = 0;
 var query = '';
 
+
+var urlsInPlaylist = [];
+
 function setPlayer(player)
 {
 	glbPlayer = player;
