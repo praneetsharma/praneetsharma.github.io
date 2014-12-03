@@ -815,7 +815,7 @@ function loadNextVid(vidId)
 {
     url = "https://www.youtube.com/v/"+vidId+"?version=3&hl=en&fs=1&enablejsapi=1";
    // player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec, 'suggestedQuality': vidQual});
-  	player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec});
+  	player.loadVideoByUrl({'mediaContentUrl': url});
     //player.loadVideoByUrl(url, 0);
     player.playVideo();
 }
