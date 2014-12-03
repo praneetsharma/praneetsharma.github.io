@@ -180,7 +180,6 @@ function addPopVideoToPlaylist(url, imgSrc, title)
   	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
   
-  	alert(vidsInPlaylist);
   
   	var parentObj = document.getElementById('loopMain2Child');
   
