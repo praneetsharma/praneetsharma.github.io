@@ -792,7 +792,7 @@ function onPlayerStateChange(event)
     	curPlayingVidId++;
     	if(curPlayingVidId == vidsInPlaylist.length)
         {
-         	 
+         	curPlayingVidId = 0; 
         }
   }
   
