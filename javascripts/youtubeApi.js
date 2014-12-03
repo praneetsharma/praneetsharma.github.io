@@ -539,7 +539,7 @@ function fillImportPlaylistBox(response)
     {
       	var title = obj.videos[i].title;
      	var imgSrc = obj.videos[i].imgUrl; 	
-     	addPopVideoToPlaylist(imgSrc, title);
+     	addPopVideoToPlaylist('h', imgSrc, title);
     }
   	
   
