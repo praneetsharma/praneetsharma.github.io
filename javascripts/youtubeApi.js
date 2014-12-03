@@ -768,7 +768,7 @@ function playVideosInPlaylist()
   	var i;
   	for(i=0;i<vidsInPlaylist.length;i++)
     {
-     	 loadNextVid(vidUrl, 0, 9, vidQual)
+     	 loadNextVid(vidUrl, 0, 9, 'large');
     }
 }
 
