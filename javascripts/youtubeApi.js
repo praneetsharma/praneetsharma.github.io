@@ -802,7 +802,6 @@ function onPlayerStateChange(event)
 
 function playNextVidInPlaylist()
 {
-  	alert(vidsInPlaylist);
   	//loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
   	loadNextVid(vidsInPlaylist[curPlayingVidId]);
     curPlayingVidId++;
