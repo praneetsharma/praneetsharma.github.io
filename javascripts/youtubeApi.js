@@ -765,6 +765,11 @@ function onSearchResponse(response) {
 function playVideosInPlaylist()
 {
  	//vidsInPlaylist 
+  	var i;
+  	for(i=0;i<vidsInPlaylist.length;i++)
+    {
+     	 
+    }
 }
 
 
