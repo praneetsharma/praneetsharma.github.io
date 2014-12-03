@@ -824,6 +824,14 @@ function loadNextVid(vidId, startSec, endSec)
   	player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec});
     player.playVideo();
 }
+  
+
+function loadNextVid(vidId, startSec, endSec)
+{
+    url = "https://www.youtube.com/v/"+vidId+"?version=3&hl=en&fs=1&enablejsapi=1";
+  	player.loadVideoByUrl({'mediaContentUrl': url, 'startSeconds': startSec, 'endSeconds': endSec});
+    player.playVideo();
+}
                   
 function loadNextVid(vidId, startSec, endSec, vidQual)
 {
