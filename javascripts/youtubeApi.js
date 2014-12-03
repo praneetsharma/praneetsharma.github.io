@@ -16,7 +16,7 @@ var pageNum = 0;
 var query = '';
 
 
-var vidsInPlaylist = [];
+
 
 
 var curPlayingVidId = 0;
