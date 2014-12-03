@@ -782,6 +782,7 @@ function onPlayerStateChange(event)
   if(event.data == YT.PlayerState.ENDED)
   {
     	//loadNextVid('DdTLXQNOA2s', 5, 60, 'large');
+    	playVideosInPlaylist();
   }
   
   if(event.data == YT.PlayerState.PAUSED)
