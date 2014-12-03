@@ -177,7 +177,6 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 
 function addPopVideoToPlaylist(url, imgSrc, title)
 {
-  	alert(url);
   	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
   
