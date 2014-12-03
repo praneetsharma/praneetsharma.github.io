@@ -548,7 +548,7 @@ function fillImportPlaylistBox(response)
       	var title = obj.videos[i].title;
      	var imgSrc = obj.videos[i].imgUrl; 
       	var url = obj.videos[i].url;
-     	addVideoToPlaylist('h', imgSrc, title);
+     	addVideoToPlaylist(url, imgSrc, title);
     }
   	
   
