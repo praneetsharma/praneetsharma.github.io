@@ -806,6 +806,13 @@ function onPlayerStateChange(event)
 }
 
 
+function playPrevVidInPlaylist()
+{
+  	//loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
+  	loadNextVid(vidsInPlaylist[curPlayingVidId]);
+    curPlayingVidId++;    
+}
+
 function playNextVidInPlaylist()
 {
   	//loadNextVid(vidsInPlaylist[curPlayingVidId], 0, 10, 'large');
