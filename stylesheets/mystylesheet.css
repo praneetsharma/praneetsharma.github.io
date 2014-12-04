@@ -414,7 +414,7 @@ a.boxclose{
 
 
 
-<!-- reference - http://css-tricks.com/examples/WebKitScrollbars/ -->
+/* reference - http://css-tricks.com/examples/WebKitScrollbars/ */
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
