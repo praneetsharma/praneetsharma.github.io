@@ -273,7 +273,7 @@ a.boxclose{
 }
 
 #urlInp{
-  	size: 40px;
+  	size: 80px;
   	padding: 6px;
  	-webkit-border-radius: 15px; //For Safari, etc.
     -moz-border-radius: 15px; //For Mozilla, etc.
