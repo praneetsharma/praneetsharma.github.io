@@ -186,7 +186,8 @@ function addVideoToPlaylist(url, imgSrc, title)
   	var parentObj = document.getElementById('loopMain2Child');
   
   	var field = document.createElement('fieldset');
-	
+	field.class = 'playlistVidClass';	
+  
 	//adding thumbnail
 	var thumbnailDiv = document.createElement('div');
 	thumbnailDiv.class="thumbnail";
