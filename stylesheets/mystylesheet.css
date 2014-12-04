@@ -278,6 +278,7 @@ a.boxclose{
  	-webkit-border-radius: 15px; //For Safari, etc.
     -moz-border-radius: 15px; //For Mozilla, etc.
     border-radius: 15px; //CSS3 Feature 
+  	border-color: #0000ff;
 }
 
 
