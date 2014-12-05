@@ -28,6 +28,7 @@
 footer {
  	width: 100%;
   	z-index: 110;
+  	background: #E14E42;
 }
 
 /*For search-box*/
