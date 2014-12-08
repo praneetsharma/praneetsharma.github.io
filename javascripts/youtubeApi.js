@@ -567,10 +567,9 @@ function fillImportPlaylistBox(response)
   	for(i=0;i<numVideos;i++)
     {
       	var title = obj.videos[i].title;
-      	var tmpTitle = title;
-  	//Replace single quote with &888 and doubel quotes with &666
-  	tmpTitle = title.replace("\"", "&666");
-  	tmpTitle = tmpTitle.replace("\'", "&888");
+      	//Replace single quote with &888 and doubel quotes with &666
+        title = title.replace("\"", "&666");
+        title = title.replace("\'", "&888");
      	var imgSrc = obj.videos[i].imgUrl; 
       	var url = obj.videos[i].url;
      	addVideoToPlaylist(url, imgSrc, title);
