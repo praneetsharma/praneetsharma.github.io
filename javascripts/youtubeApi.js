@@ -130,7 +130,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
 	
-  	e1.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	e1.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + tmpTitle + "')";
   	//e1.href = "javascript:addVideoToPlaylist('" + imgSrc + "'" + "," + "'" + title + "')";
   	/*e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	
@@ -151,7 +151,7 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-  	e2.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	e2.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + tmpTitle + "')";
 	/*e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";*/
 	e2.innerHTML = title;
 	h3.appendChild(e2);
@@ -308,7 +308,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	thumbnailDiv.id = 'tnail-'+i;
 	thumbnailDiv.style.display = 'inline-block';
 	var e1 = document.createElement('a');
-  	e1.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	e1.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + tmpTitle + "')";
 	//e1.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	var img = document.createElement("img");
 	img.src = imgSrc;
@@ -327,7 +327,7 @@ function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 	var h3 = document.createElement('h3a');
 	h3.class = 'videoTitle';
 	var e2 = document.createElement('a');
-  	e2.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + title + "')";
+  	e2.href = "javascript:addVideoToPlaylist('" + url + "'" + "," + "'" + imgSrc + "'" + "," + "'" + tmpTitle + "')";
 	//e2.href = "javascript:addLoopDivSpcl('"+localUrl+"')";
 	e2.innerHTML = title;
 	h3.appendChild(e2);
