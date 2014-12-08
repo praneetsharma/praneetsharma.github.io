@@ -186,8 +186,8 @@ function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 function addVideoToPlaylist(url, imgSrc, title)
 {
   	//Replace &888 with single quote and &666 with double quote
-  	//title = title.replace("&666", "\"");
-  	//title = title.replace("&888", "\'");
+  	title = title.replace("&666", "\"");
+  	title = title.replace("&888", "\'");
   
   	var vidId = getIdFromUrl(url);
   	vidsInPlaylist.push(vidId);
