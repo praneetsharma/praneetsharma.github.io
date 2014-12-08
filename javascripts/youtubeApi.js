@@ -111,6 +111,8 @@ function fillPopVidBox(response)
 
 function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
+  	//Replace single quote with &888 and doubel quotes with &666
+  
   	localUrl = url;
   
  	var parentObj = document.getElementById('boxChild');
