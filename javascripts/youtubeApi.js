@@ -112,6 +112,7 @@ function fillPopVidBox(response)
 function fillSinglePopVid(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
   	//Replace single quote with &888 and doubel quotes with &666
+  	title = title.replace("\"", "&666");
   
   	localUrl = url;
   
