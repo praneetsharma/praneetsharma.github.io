@@ -291,9 +291,10 @@ function fillsearchVidBoxPop(response, isPrevReq)
 function fillSingleSearchVidPop(url, imgSrc, title, uploaderInfo, videoDescr, i)
 {
   
+  	var tmpTitle = title;
   	//Replace single quote with &888 and doubel quotes with &666
-  	title = title.replace("\"", "&666");
-  	title = title.replace("\'", "&888");
+  	tmpTitle = title.replace("\"", "&666");
+  	tmpTitle = tmpTitle.replace("\'", "&888");
   
   	localUrl = url;
   
