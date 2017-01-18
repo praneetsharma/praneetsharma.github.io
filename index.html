@@ -2,20 +2,24 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/myscript.js"></script>
+
+    <!-- Mobile First -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="0">
 
     <!-- NAVIGATION BAR with the following items:
       *Name on left hand side
       *Following menu items on right hand side: About, Portfolio, Contact
     -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
           <!-- Button to toggle menu items on small screen devices-->
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -23,18 +27,52 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a class="navbar-brand" href="#"> PRANEET SHARMA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">ABOUT</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about-screen">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- HOME SECTION -->
+    <div class="jumbotron" id="home-screen">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="page-header">
+              <h1 class="text-center">PRANEET SHARMA</h1>
+            </div>
+            <h2 class="text-center">Software Engineer, &lt;Company&gt;</h2>
+            <h2 class="text-center">B.Tech CSE (with Hons.), &lt;College&gt;</h2>
+          </div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-md-5">
+            <img src="./img/profile.jpg" class="img-circle center-block" alt="Profile Pic" id="profile-pic"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about-screen">
+    </section>
+
+    <section id="portfolio">
+    </section>
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="page-header text-center">
+          <h1>Contact Me</h1>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>
